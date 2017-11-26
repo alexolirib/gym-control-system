@@ -1,0 +1,35 @@
+c:\users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\bin\Debug\frmAcademia.exe.config
+c:\users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\bin\Debug\frmAcademia.exe
+c:\users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\bin\Debug\frmAcademia.pdb
+c:\users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\obj\Debug\frmAcademia.csprojResolveAssemblyReference.cache
+c:\users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\obj\Debug\frmAcademia.Principal.resources
+c:\users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\obj\Debug\frmAcademia.Properties.Resources.resources
+c:\users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\obj\Debug\frmAcademia.csproj.GenerateResource.Cache
+c:\users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\obj\Debug\frmAcademia.exe
+c:\users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\obj\Debug\frmAcademia.pdb
+C:\Users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\obj\Debug\frmAcademia.frmProfessores.resources
+C:\Users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\obj\Debug\frmAcademia.frmModalidades.resources
+C:\Users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\obj\Debug\frmAcademia.frmTurmas.resources
+C:\Users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\obj\Debug\frmAcademia.frmHorarios.resources
+C:\Users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\obj\Debug\frmAcademia.frmAlunos.resources
+C:\Users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\obj\Debug\frmAcademia.frmMatricula.resources
+C:\Users\adm\documents\visual studio 2012\Projects\frmAcademia\frmAcademia\obj\Debug\frmAcademia.txtAtiva.resources
+C:\Users\adm\Documents\projetos\frmAcademia1\frmAcademia\bin\Debug\frmAcademia.exe.config
+C:\Users\adm\Documents\projetos\frmAcademia1\frmAcademia\obj\Debug\frmAcademia.exe
+C:\Users\adm\Documents\projetos\frmAcademia1\frmAcademia\obj\Debug\frmAcademia.pdb
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\bin\Debug\frmAcademia.exe.config
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\obj\Debug\frmAcademia.exe
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\obj\Debug\frmAcademia.pdb
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\bin\Debug\frmAcademia.exe
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\bin\Debug\frmAcademia.pdb
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\obj\Debug\frmAcademia.csprojResolveAssemblyReference.cache
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\obj\Debug\frmAcademia.frmAlunos.resources
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\obj\Debug\frmAcademia.txtAtiva.resources
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\obj\Debug\frmAcademia.frmHorarios.resources
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\obj\Debug\frmAcademia.frmMatricula.resources
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\obj\Debug\frmAcademia.frmModalidades.resources
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\obj\Debug\frmAcademia.frmProfessores.resources
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\obj\Debug\frmAcademia.frmTurmas.resources
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\obj\Debug\frmAcademia.Principal.resources
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\obj\Debug\frmAcademia.Properties.Resources.resources
+C:\Users\adm\Documents\projetos\ControleAcademia\frmAcademia\obj\Debug\frmAcademia.csproj.GenerateResource.Cache

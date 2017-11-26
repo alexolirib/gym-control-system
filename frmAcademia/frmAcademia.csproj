@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D23441E-B772-4682-9E76-2E050C3E27A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>frmAcademia</RootNamespace>
+    <AssemblyName>frmAcademia</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alunos.cs" />
+    <Compile Include="CONEXAO.cs" />
+    <Compile Include="frmAlunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlunos.Designer.cs">
+      <DependentUpon>frmAlunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmControleAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControleAluno.Designer.cs">
+      <DependentUpon>frmControleAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHorarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHorarios.Designer.cs">
+      <DependentUpon>frmHorarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMatricula.Designer.cs">
+      <DependentUpon>frmMatricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModalidades.Designer.cs">
+      <DependentUpon>frmModalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfessores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfessores.Designer.cs">
+      <DependentUpon>frmProfessores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTurmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTurmas.Designer.cs">
+      <DependentUpon>frmTurmas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="horarios.cs" />
+    <Compile Include="matricula.cs" />
+    <Compile Include="modalidade.cs" />
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Professores.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pu.cs" />
+    <Compile Include="Turma.cs" />
+    <EmbeddedResource Include="frmAlunos.resx">
+      <DependentUpon>frmAlunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControleAluno.resx">
+      <DependentUpon>frmControleAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHorarios.resx">
+      <DependentUpon>frmHorarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMatricula.resx">
+      <DependentUpon>frmMatricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModalidades.resx">
+      <DependentUpon>frmModalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfessores.resx">
+      <DependentUpon>frmProfessores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTurmas.resx">
+      <DependentUpon>frmTurmas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_hand_biceps_310322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_save_173091.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_close_476323.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_081_Pen_183209.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_new-24_103173.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_edit_173002.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_cross-24_103181.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_close_4763231.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_ic_query_builder_48px_351994.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_cross-24_1031811.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_personal_6628.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_clients_43573.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Group_Meeting_Dark_80843.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_save_1730911.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_cross-24_1031812.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
