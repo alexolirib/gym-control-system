@@ -25,6 +25,7 @@ create table Turma(
 	ID_MODALIDADE int foreign key references Modalidade,
 	MAXIMO_ALUNOS int not null,
 	NUMERO_TURMA int not null,
+	ALUNO_MATRICULADO int not null,
 )
 create table Horario(
 	ID_HORARIO int primary key identity not null,

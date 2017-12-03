@@ -25,17 +25,17 @@ namespace frmAcademia
 			using (SqlConnection novaConexao = new SqlConnection(CONEXAO.stringConexao))
 				try //tenta realizar tarefa
 				{
-					novaConexao.Open(); //abre Conexao com o banco
-					MessageBox.Show("Conectou!");//avisa que foi conectado!
+					/*novaConexao.Open(); //abre Conexao com o banco
+					MessageBox.Show("Conectou!");//avisa que foi conectado!*/
 				}
 				catch (Exception) //erro em executar
 				{
 					MessageBox.Show("Não conectou!");
 				}
-				finally //por fim é realizada esta ação!
+				/*finally //por fim é realizada esta ação!
 				{
 					MessageBox.Show("Seja bem-vindo ao sistema!");
-				}
+				}*/
 		}
 		//chamar form professor
 		private void toolStripButton7_Click(object sender, EventArgs e)

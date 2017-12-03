@@ -16,19 +16,20 @@ namespace frmAcademia
 
 		DataTable dadosTabela = new DataTable();
 
-		public void Salvar(int idModalidade, int maximoAluno, int turma)
+		public void Salvar(int idModalidade, int maximoAluno, int turma, int alunoMatriculado)
 		{
 			try
 			{
 				using (SqlConnection conexao = new SqlConnection(CONEXAO.stringConexao))
 				{
 					conexao.Open();
-					sql.Append("insert into turma (ID_MODALIDADE, MAXIMO_ALUNOS, NUMERO_TURMA) ");
-					sql.Append(" values (@idModalidade, @maximoAluno, @turma)");
+					sql.Append("insert into turma (ID_MODALIDADE, MAXIMO_ALUNOS, NUMERO_TURMA, ALUNO_MATRICULADO) ");
+					sql.Append(" values (@idModalidade, @maximoAluno, @turma, @alunoMatriculado)");
 
 					comandoSql.Parameters.Add(new SqlParameter("@idModalidade", idModalidade));
 					comandoSql.Parameters.Add(new SqlParameter("@maximoAluno", maximoAluno));
 					comandoSql.Parameters.Add(new SqlParameter("@turma", turma));
+					comandoSql.Parameters.Add(new SqlParameter("@alunoMatriculado", alunoMatriculado));
 
 					comandoSql.CommandText = sql.ToString();
 					comandoSql.Connection = conexao;
@@ -62,6 +63,33 @@ namespace frmAcademia
 				throw new Exception("Erro no método Listar da tabela Turma, se o problema persistir entre em contato com o administrador do Sistema");
 			}
 		}
+		public DataTable listarAtualizado(int linhas, int idTurma)
+		{
+			try
+			{
+				using (SqlConnection conexao = new SqlConnection(CONEXAO.stringConexao))
+				{
+					conexao.Open();
+					sql.Append("select Turma.ID_MODALIDADE, Turma.ID_TURMA, Turma.MAXIMO_ALUNOS, Turma.NUMERO_TURMA, Modalidade.NOME_MODALIDADE ");
+					sql.Append("from Modalidade inner join Turma on Turma.ID_MODALIDADE = Modalidade.ID_MODALIDADE ");
+					sql.Append("where  Turma.ID_TURMA = @idTurma ");
+					sql.Append("order by Modalidade.NOME_MODALIDADE");
+
+					comandoSql.Parameters.Add(new SqlParameter("@linhas", linhas));
+					comandoSql.Parameters.Add(new SqlParameter("@idTurma", idTurma));
+
+					comandoSql.CommandText = sql.ToString();
+					comandoSql.Connection = conexao;
+					dadosTabela.Load(comandoSql.ExecuteReader());
+					return dadosTabela;
+				}
+			}
+			catch (Exception)
+			{
+
+				throw new Exception("Erro no método Listar da tabela Turma, se o problema persistir entre em contato com o administrador do Sistema");
+			}
+		}
 		public DataTable listarComMesalidade()
 		{
 			try
@@ -69,7 +97,7 @@ namespace frmAcademia
 				using (SqlConnection conexao = new SqlConnection(CONEXAO.stringConexao))
 				{
 					conexao.Open();
-					sql.Append("select Turma.ID_MODALIDADE, Turma.ID_TURMA, Turma.MAXIMO_ALUNOS, Turma.NUMERO_TURMA, Modalidade.NOME_MODALIDADE, Modalidade.MENSALIDADE ");
+					sql.Append("select Turma.ID_MODALIDADE, Turma.ALUNO_MATRICULADO , Turma.ID_TURMA, Turma.MAXIMO_ALUNOS,(Turma.MAXIMO_ALUNOS - Turma.ALUNO_MATRICULADO)  as VagasSobrando, Turma.NUMERO_TURMA, Modalidade.NOME_MODALIDADE, Modalidade.MENSALIDADE ");
 					sql.Append("from Modalidade inner join Turma on Turma.ID_MODALIDADE = Modalidade.ID_MODALIDADE order by Modalidade.NOME_MODALIDADE ");
 
 					comandoSql.CommandText = sql.ToString();
@@ -109,6 +137,31 @@ namespace frmAcademia
 			{
 
 				throw new Exception("Erro no método Alterar da tabela Turma, se o problema persistir entre em contato com o administrador do Sistema");
+			}
+		}
+		public void alterarAlunoMatriculado(int alunoMatriculado, int idTurma)
+		{
+			try
+			{
+				using (SqlConnection conexao = new SqlConnection(CONEXAO.stringConexao))
+				{
+					conexao.Open();
+					sql.Append("update Turma set ALUNO_MATRICULADO = @alunoMatriculado ");
+					sql.Append("where (ID_TURMA=@idTurma)");
+
+					comandoSql.Parameters.Add(new SqlParameter("@alunoMatriculado", alunoMatriculado));
+					comandoSql.Parameters.Add(new SqlParameter("@idTurma", idTurma));
+
+					comandoSql.CommandText = sql.ToString();
+					comandoSql.Connection = conexao;
+					comandoSql.ExecuteNonQuery();
+
+				}
+			}
+			catch (Exception)
+			{
+
+				throw new Exception("Erro no método alterarAlunoMatriculado da tabela Turma, se o problema persistir entre em contato com o administrador do Sistema");
 			}
 		}
 		public void excluir(int idTurma)

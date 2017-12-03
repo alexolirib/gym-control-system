@@ -61,7 +61,7 @@ namespace frmAcademia
 					else
 					{
 						novaTurma = new Turma();
-						novaTurma.Salvar(Convert.ToInt32(cbxModalidade.SelectedValue), Convert.ToInt32(txtAluno.Text), Convert.ToInt32(txtTurma.Text));
+						novaTurma.Salvar(Convert.ToInt32(cbxModalidade.SelectedValue), Convert.ToInt32(txtAluno.Text), Convert.ToInt32(txtTurma.Text), 0);
 						MessageBox.Show("Turma Salvo com sucesso!!");
 						limpar();
 						listarTurma();
@@ -188,6 +188,11 @@ namespace frmAcademia
 		}
 
 		private void dgvHorario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+
+		private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
 		{
 
 		}

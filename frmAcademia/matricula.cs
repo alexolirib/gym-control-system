@@ -46,7 +46,7 @@ namespace frmAcademia
 				using (SqlConnection conexao = new SqlConnection(CONEXAO.stringConexao))
 				{
 					conexao.Open();
-					sql.Append("select Matricula.ID_MATRICULA, Matricula.ID_ALUNO, Matricula.ID_TURMA, Matricula.VENCIMENTO, Turma.NUMERO_TURMA, Modalidade.NOME_MODALIDADE, Modalidade.MENSALIDADE, Modalidade.ID_MODALIDADE, Aluno.NOME_Aluno, Matricula.SITUACAO ");
+					sql.Append("select Matricula.ID_MATRICULA, Matricula.ID_ALUNO, Matricula.ID_TURMA, Matricula.VENCIMENTO, Turma.ALUNO_MATRICULADO, Turma.NUMERO_TURMA, Modalidade.NOME_MODALIDADE, Modalidade.MENSALIDADE, Modalidade.ID_MODALIDADE, Aluno.NOME_Aluno, Matricula.SITUACAO ");
 					sql.Append("from Matricula inner join Turma on Matricula.ID_TURMA = Turma.ID_TURMA ");
 					sql.Append("inner join Modalidade on Turma.ID_MODALIDADE = Modalidade.ID_MODALIDADE ");
 					sql.Append("inner join Aluno on Aluno.ID_Aluno = Matricula.ID_ALUNO ");
@@ -136,6 +136,6 @@ namespace frmAcademia
 				
 				throw new Exception("Erro no métado verificaAlunoMatriculado da tabela Matricula, se o problema persistir entre em contato com o administrador do sistema");
 			}			
-		}
+		}		
 	}
 }

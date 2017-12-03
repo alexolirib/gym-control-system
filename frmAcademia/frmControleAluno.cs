@@ -32,6 +32,7 @@ namespace frmAcademia
 			novoTurma = new Turma();
 			try
 			{
+				
 				dgvTurmasCadastro.DataSource = novoTurma.listarComMesalidade();
 				
 			}
@@ -77,6 +78,7 @@ namespace frmAcademia
 		private void frmControleAluno_Load(object sender, EventArgs e)
 		{
 			listarTurmas();
+			//atualizaVagas();
 			listarMatricula();
 			cbxVencimento.SelectedIndex = -1;
 			bloqueaCadastro();
@@ -125,6 +127,7 @@ namespace frmAcademia
 			txtObservacao.Clear();
 			txtSexo.SelectedIndex = -1;
 			txtTelefone.Clear();
+			txtAlunoMatriculado.Clear();
 			this.Text = "SCA - CONTROLE DE ALUNOS";
 			btnSalvar.Enabled = true;
 			txtNomeAluno.Clear();
@@ -186,10 +189,18 @@ namespace frmAcademia
 					}
 					else
 					{
-						novaFrmMatricula = new frmMatricula(this, txtNomeAluno.Text, Convert.ToInt32(txtCodAluno.Text));
-						DataGridView modalidadeSelecionada = dgvTurmasCadastro.Rows[dgvTurmasCadastro.CurrentRow.Index].DataGridView;
-						novaFrmMatricula.ExibirMatricula(modalidadeSelecionada);
-						novaFrmMatricula.ShowDialog();
+						if (dgvTurmasCadastro.Rows[dgvTurmasCadastro.CurrentRow.Index].Cells["VagasSobrando"].Value.ToString() == "0")
+						{
+							MessageBox.Show("Turma Lotada!!", "Lotada");
+						}
+						else
+						{
+							novaFrmMatricula = new frmMatricula(this, txtNomeAluno.Text, Convert.ToInt32(txtCodAluno.Text));
+							DataGridView modalidadeSelecionada = dgvTurmasCadastro.Rows[dgvTurmasCadastro.CurrentRow.Index].DataGridView;
+							novaFrmMatricula.ExibirMatricula(modalidadeSelecionada);
+							novaFrmMatricula.ShowDialog();
+							listarTurmas(); 
+						}
 					}
 				}
 				catch (Exception ex)
@@ -198,7 +209,6 @@ namespace frmAcademia
 				} 
 			}
 		}
-
 		private void dgvMatriculas_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{//Isso é para o método de alterar e apagar
 			txtParaAtivar.Text = dgvMatriculas.Rows[dgvMatriculas.CurrentRow.Index].Cells["SITUACAO2"].Value.ToString();
@@ -213,6 +223,7 @@ namespace frmAcademia
 			cbxVencimento.Text = dgvMatriculas.Rows[dgvMatriculas.CurrentRow.Index].Cells["VENCIMENTO2"].Value.ToString();
 			txtIdMatricula.Text = dgvMatriculas.Rows[dgvMatriculas.CurrentRow.Index].Cells["ID_MATRICULA2"].Value.ToString();
 			txtIdTurma.Text = dgvMatriculas.Rows[dgvMatriculas.CurrentRow.Index].Cells["ID_TURMA2"].Value.ToString();
+			txtAlunoMatriculado.Text = dgvMatriculas.Rows[dgvMatriculas.CurrentRow.Index].Cells["ALUNO_MATRICULADO1"].Value.ToString();
 			int linhas = dgvMatriculas.Rows.Count;
 			if (linhas>0)
 			{
@@ -301,8 +312,12 @@ namespace frmAcademia
 				novaMatricula = new matricula();
 				novaMatricula.delete(Convert.ToInt32(txtIdMatricula.Text));
 				MessageBox.Show("Excluido!!");
+
+				novoTurma = new Turma();
+				novoTurma.alterarAlunoMatriculado(Convert.ToInt32(txtAlunoMatriculado.Text) - 1,Convert.ToInt32(txtIdTurma.Text));
 				listarMatricula();
 				bloqueaCadastro();
+				listarTurmas();
 			}
 			catch (Exception ex)
 			{
@@ -325,6 +340,7 @@ namespace frmAcademia
 			cbxVencimento.Text = dgvMatriculas.Rows[dgvMatriculas.CurrentRow.Index].Cells["VENCIMENTO2"].Value.ToString();
 			txtIdMatricula.Text = dgvMatriculas.Rows[dgvMatriculas.CurrentRow.Index].Cells["ID_MATRICULA2"].Value.ToString();
 			txtIdTurma.Text = dgvMatriculas.Rows[dgvMatriculas.CurrentRow.Index].Cells["ID_TURMA2"].Value.ToString();
+			txtAlunoMatriculado.Text = dgvMatriculas.Rows[dgvMatriculas.CurrentRow.Index].Cells["ALUNO_MATRICULADO1"].Value.ToString();
 			int linhas = dgvMatriculas.Rows.Count;
 			if (linhas > 0)
 			{
@@ -334,6 +350,11 @@ namespace frmAcademia
 			{
 				bloqueaCadastro();
 			}
+		}
+
+		private void dgvTurmasCadastro_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+		{
+									
 		}		
 	}
 }

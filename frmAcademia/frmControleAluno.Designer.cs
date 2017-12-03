@@ -28,8 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(txtAtiva));
 			this.label1 = new System.Windows.Forms.Label();
 			this.tcAluno = new System.Windows.Forms.TabControl();
@@ -38,16 +38,6 @@
 			this.label14 = new System.Windows.Forms.Label();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.dgvTurma = new System.Windows.Forms.DataGridView();
-			this.NOME_MODALIDE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.NUMERO_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.VENCIMENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.MENSALIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.SITUACAO1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_ALUNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.NOME_Aluno2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_MATRICULA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_MODALIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.label12 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
 			this.txtCpf = new System.Windows.Forms.MaskedTextBox();
@@ -85,24 +75,7 @@
 			this.label20 = new System.Windows.Forms.Label();
 			this.label19 = new System.Windows.Forms.Label();
 			this.dgvMatriculas = new System.Windows.Forms.DataGridView();
-			this.NOME_MODALIDADE2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.NUMERO_TURMA2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.VENCIMENTO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.MENSALIDADE2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.SITUACAO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_TURMA2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_MATRICULA2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_MODALIDADE2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_ALUNO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.NOME_Aluno = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.dgvTurmasCadastro = new System.Windows.Forms.DataGridView();
-			this.btnEditar = new System.Windows.Forms.DataGridViewImageColumn();
-			this.NOME_MODALIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.numeroTurmaCadastro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.maximoAlunosCadastro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.MENSALIDADE3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_MODALIDADE_CADASTRO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_TURMA_CADASTRO = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.label18 = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
 			this.chbAtivar = new System.Windows.Forms.CheckBox();
@@ -113,6 +86,38 @@
 			this.txtCodAluno = new System.Windows.Forms.TextBox();
 			this.txtNomeAluno = new System.Windows.Forms.TextBox();
 			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+			this.NOME_MODALIDADE2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.NUMERO_TURMA2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.VENCIMENTO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.MENSALIDADE2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.SITUACAO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_TURMA2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_MATRICULA2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_MODALIDADE2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_ALUNO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.NOME_Aluno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ALUNO_MATRICULADO1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.txtAlunoMatriculado = new System.Windows.Forms.TextBox();
+			this.NOME_MODALIDE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.NUMERO_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.VENCIMENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.MENSALIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.SITUACAO1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_ALUNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.NOME_Aluno2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_MATRICULA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_MODALIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ALUNO_MATRICULADO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.btnEditar = new System.Windows.Forms.DataGridViewImageColumn();
+			this.ALUNO_MATRICULADO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.NOME_MODALIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.VagasSobrando = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.numeroTurmaCadastro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.maximoAlunosCadastro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.MENSALIDADE3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_MODALIDADE_CADASTRO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_TURMA_CADASTRO = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.tcAluno.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -233,96 +238,14 @@
             this.NOME_Aluno2,
             this.ID_MATRICULA,
             this.ID_TURMA,
-            this.ID_MODALIDADE});
+            this.ID_MODALIDADE,
+            this.ALUNO_MATRICULADO2});
 			this.dgvTurma.Location = new System.Drawing.Point(226, 293);
 			this.dgvTurma.Name = "dgvTurma";
 			this.dgvTurma.ReadOnly = true;
 			this.dgvTurma.RowHeadersVisible = false;
 			this.dgvTurma.Size = new System.Drawing.Size(479, 150);
 			this.dgvTurma.TabIndex = 27;
-			// 
-			// NOME_MODALIDE
-			// 
-			this.NOME_MODALIDE.DataPropertyName = "NOME_MODALIDADE";
-			this.NOME_MODALIDE.HeaderText = "Modalidade";
-			this.NOME_MODALIDE.Name = "NOME_MODALIDE";
-			this.NOME_MODALIDE.ReadOnly = true;
-			this.NOME_MODALIDE.Width = 185;
-			// 
-			// NUMERO_TURMA
-			// 
-			this.NUMERO_TURMA.DataPropertyName = "NUMERO_TURMA";
-			this.NUMERO_TURMA.HeaderText = "Turma";
-			this.NUMERO_TURMA.Name = "NUMERO_TURMA";
-			this.NUMERO_TURMA.ReadOnly = true;
-			this.NUMERO_TURMA.Width = 70;
-			// 
-			// VENCIMENTO
-			// 
-			this.VENCIMENTO.DataPropertyName = "VENCIMENTO";
-			dataGridViewCellStyle1.NullValue = null;
-			this.VENCIMENTO.DefaultCellStyle = dataGridViewCellStyle1;
-			this.VENCIMENTO.HeaderText = "Vencimento";
-			this.VENCIMENTO.Name = "VENCIMENTO";
-			this.VENCIMENTO.ReadOnly = true;
-			// 
-			// MENSALIDADE
-			// 
-			this.MENSALIDADE.DataPropertyName = "MENSALIDADE";
-			dataGridViewCellStyle2.Format = "C2";
-			dataGridViewCellStyle2.NullValue = null;
-			this.MENSALIDADE.DefaultCellStyle = dataGridViewCellStyle2;
-			this.MENSALIDADE.HeaderText = "Mensalidade";
-			this.MENSALIDADE.Name = "MENSALIDADE";
-			this.MENSALIDADE.ReadOnly = true;
-			// 
-			// SITUACAO1
-			// 
-			this.SITUACAO1.DataPropertyName = "SITUACAO";
-			this.SITUACAO1.HeaderText = "Situação";
-			this.SITUACAO1.Name = "SITUACAO1";
-			this.SITUACAO1.ReadOnly = true;
-			this.SITUACAO1.Visible = false;
-			// 
-			// ID_ALUNO
-			// 
-			this.ID_ALUNO.DataPropertyName = "ID_ALUNO";
-			this.ID_ALUNO.HeaderText = "codigo aluno";
-			this.ID_ALUNO.Name = "ID_ALUNO";
-			this.ID_ALUNO.ReadOnly = true;
-			this.ID_ALUNO.Visible = false;
-			// 
-			// NOME_Aluno2
-			// 
-			this.NOME_Aluno2.DataPropertyName = "NOME_Aluno";
-			this.NOME_Aluno2.HeaderText = "NOME_Aluno";
-			this.NOME_Aluno2.Name = "NOME_Aluno2";
-			this.NOME_Aluno2.ReadOnly = true;
-			this.NOME_Aluno2.Visible = false;
-			// 
-			// ID_MATRICULA
-			// 
-			this.ID_MATRICULA.DataPropertyName = "ID_MATRICULA";
-			this.ID_MATRICULA.HeaderText = "CODIGO MATRICULA";
-			this.ID_MATRICULA.Name = "ID_MATRICULA";
-			this.ID_MATRICULA.ReadOnly = true;
-			this.ID_MATRICULA.Visible = false;
-			// 
-			// ID_TURMA
-			// 
-			this.ID_TURMA.DataPropertyName = "ID_TURMA";
-			this.ID_TURMA.HeaderText = "CODIGO TURMA";
-			this.ID_TURMA.Name = "ID_TURMA";
-			this.ID_TURMA.ReadOnly = true;
-			this.ID_TURMA.Visible = false;
-			// 
-			// ID_MODALIDADE
-			// 
-			this.ID_MODALIDADE.DataPropertyName = "ID_MODALIDADE";
-			this.ID_MODALIDADE.HeaderText = "CODIGO MODALIDADE";
-			this.ID_MODALIDADE.Name = "ID_MODALIDADE";
-			this.ID_MODALIDADE.ReadOnly = true;
-			this.ID_MODALIDADE.Visible = false;
 			// 
 			// label12
 			// 
@@ -572,6 +495,7 @@
 			// tpMatricula
 			// 
 			this.tpMatricula.BackColor = System.Drawing.SystemColors.Control;
+			this.tpMatricula.Controls.Add(this.txtAlunoMatriculado);
 			this.tpMatricula.Controls.Add(this.txtIdTurma);
 			this.tpMatricula.Controls.Add(this.txtIdMatricula);
 			this.tpMatricula.Controls.Add(this.txtParaAtivar);
@@ -600,7 +524,7 @@
 			// 
 			// txtIdTurma
 			// 
-			this.txtIdTurma.Location = new System.Drawing.Point(502, 427);
+			this.txtIdTurma.Location = new System.Drawing.Point(463, 427);
 			this.txtIdTurma.Name = "txtIdTurma";
 			this.txtIdTurma.Size = new System.Drawing.Size(10, 22);
 			this.txtIdTurma.TabIndex = 21;
@@ -608,7 +532,7 @@
 			// 
 			// txtIdMatricula
 			// 
-			this.txtIdMatricula.Location = new System.Drawing.Point(563, 427);
+			this.txtIdMatricula.Location = new System.Drawing.Point(504, 427);
 			this.txtIdMatricula.Name = "txtIdMatricula";
 			this.txtIdMatricula.Size = new System.Drawing.Size(10, 22);
 			this.txtIdMatricula.TabIndex = 20;
@@ -697,7 +621,8 @@
             this.ID_MATRICULA2,
             this.ID_MODALIDADE2,
             this.ID_ALUNO2,
-            this.NOME_Aluno});
+            this.NOME_Aluno,
+            this.ALUNO_MATRICULADO1});
 			this.dgvMatriculas.Location = new System.Drawing.Point(210, 110);
 			this.dgvMatriculas.Name = "dgvMatriculas";
 			this.dgvMatriculas.ReadOnly = true;
@@ -711,86 +636,6 @@
 			this.dgvMatriculas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMatriculas_CellContentClick);
 			this.dgvMatriculas.DoubleClick += new System.EventHandler(this.dgvMatriculas_DoubleClick);
 			// 
-			// NOME_MODALIDADE2
-			// 
-			this.NOME_MODALIDADE2.DataPropertyName = "NOME_MODALIDADE";
-			this.NOME_MODALIDADE2.HeaderText = "Modalidade";
-			this.NOME_MODALIDADE2.Name = "NOME_MODALIDADE2";
-			this.NOME_MODALIDADE2.ReadOnly = true;
-			this.NOME_MODALIDADE2.Width = 172;
-			// 
-			// NUMERO_TURMA2
-			// 
-			this.NUMERO_TURMA2.DataPropertyName = "NUMERO_TURMA";
-			this.NUMERO_TURMA2.HeaderText = "Turma";
-			this.NUMERO_TURMA2.Name = "NUMERO_TURMA2";
-			this.NUMERO_TURMA2.ReadOnly = true;
-			this.NUMERO_TURMA2.Width = 60;
-			// 
-			// VENCIMENTO2
-			// 
-			this.VENCIMENTO2.DataPropertyName = "VENCIMENTO";
-			this.VENCIMENTO2.HeaderText = "Vencimento";
-			this.VENCIMENTO2.Name = "VENCIMENTO2";
-			this.VENCIMENTO2.ReadOnly = true;
-			this.VENCIMENTO2.Width = 90;
-			// 
-			// MENSALIDADE2
-			// 
-			this.MENSALIDADE2.DataPropertyName = "MENSALIDADE";
-			this.MENSALIDADE2.HeaderText = "Mensalidade";
-			this.MENSALIDADE2.Name = "MENSALIDADE2";
-			this.MENSALIDADE2.ReadOnly = true;
-			this.MENSALIDADE2.Width = 90;
-			// 
-			// SITUACAO2
-			// 
-			this.SITUACAO2.DataPropertyName = "SITUACAO";
-			this.SITUACAO2.HeaderText = "Situação";
-			this.SITUACAO2.Name = "SITUACAO2";
-			this.SITUACAO2.ReadOnly = true;
-			this.SITUACAO2.Width = 80;
-			// 
-			// ID_TURMA2
-			// 
-			this.ID_TURMA2.DataPropertyName = "ID_TURMA";
-			this.ID_TURMA2.HeaderText = "ID_TURMA";
-			this.ID_TURMA2.Name = "ID_TURMA2";
-			this.ID_TURMA2.ReadOnly = true;
-			this.ID_TURMA2.Visible = false;
-			// 
-			// ID_MATRICULA2
-			// 
-			this.ID_MATRICULA2.DataPropertyName = "ID_MATRICULA";
-			this.ID_MATRICULA2.HeaderText = "ID_MATRICULA";
-			this.ID_MATRICULA2.Name = "ID_MATRICULA2";
-			this.ID_MATRICULA2.ReadOnly = true;
-			this.ID_MATRICULA2.Visible = false;
-			// 
-			// ID_MODALIDADE2
-			// 
-			this.ID_MODALIDADE2.DataPropertyName = "ID_MODALIDADE";
-			this.ID_MODALIDADE2.HeaderText = "ID_MODALIDADE";
-			this.ID_MODALIDADE2.Name = "ID_MODALIDADE2";
-			this.ID_MODALIDADE2.ReadOnly = true;
-			this.ID_MODALIDADE2.Visible = false;
-			// 
-			// ID_ALUNO2
-			// 
-			this.ID_ALUNO2.DataPropertyName = "ID_ALUNO";
-			this.ID_ALUNO2.HeaderText = "ID_ALUNO";
-			this.ID_ALUNO2.Name = "ID_ALUNO2";
-			this.ID_ALUNO2.ReadOnly = true;
-			this.ID_ALUNO2.Visible = false;
-			// 
-			// NOME_Aluno
-			// 
-			this.NOME_Aluno.DataPropertyName = "NOME_Aluno";
-			this.NOME_Aluno.HeaderText = "NOME_Aluno";
-			this.NOME_Aluno.Name = "NOME_Aluno";
-			this.NOME_Aluno.ReadOnly = true;
-			this.NOME_Aluno.Visible = false;
-			// 
 			// dgvTurmasCadastro
 			// 
 			this.dgvTurmasCadastro.AllowUserToAddRows = false;
@@ -801,7 +646,9 @@
 			this.dgvTurmasCadastro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvTurmasCadastro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnEditar,
+            this.ALUNO_MATRICULADO,
             this.NOME_MODALIDADE,
+            this.VagasSobrando,
             this.numeroTurmaCadastro,
             this.maximoAlunosCadastro,
             this.MENSALIDADE3,
@@ -814,63 +661,8 @@
 			this.dgvTurmasCadastro.Size = new System.Drawing.Size(417, 185);
 			this.dgvTurmasCadastro.TabIndex = 9;
 			this.dgvTurmasCadastro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTurmas_CellContentClick);
+			this.dgvTurmasCadastro.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTurmasCadastro_CellEndEdit);
 			this.dgvTurmasCadastro.DoubleClick += new System.EventHandler(this.dgvTurmasCadastro_DoubleClick);
-			// 
-			// btnEditar
-			// 
-			this.btnEditar.HeaderText = "";
-			this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
-			this.btnEditar.Name = "btnEditar";
-			this.btnEditar.ReadOnly = true;
-			this.btnEditar.Width = 50;
-			// 
-			// NOME_MODALIDADE
-			// 
-			this.NOME_MODALIDADE.DataPropertyName = "NOME_MODALIDADE";
-			this.NOME_MODALIDADE.HeaderText = "Modalidade";
-			this.NOME_MODALIDADE.Name = "NOME_MODALIDADE";
-			this.NOME_MODALIDADE.ReadOnly = true;
-			this.NOME_MODALIDADE.Width = 210;
-			// 
-			// numeroTurmaCadastro
-			// 
-			this.numeroTurmaCadastro.DataPropertyName = "NUMERO_TURMA";
-			this.numeroTurmaCadastro.HeaderText = "Turma";
-			this.numeroTurmaCadastro.Name = "numeroTurmaCadastro";
-			this.numeroTurmaCadastro.ReadOnly = true;
-			this.numeroTurmaCadastro.Width = 70;
-			// 
-			// maximoAlunosCadastro
-			// 
-			this.maximoAlunosCadastro.DataPropertyName = "MAXIMO_ALUNOS";
-			this.maximoAlunosCadastro.HeaderText = "Vagas";
-			this.maximoAlunosCadastro.Name = "maximoAlunosCadastro";
-			this.maximoAlunosCadastro.ReadOnly = true;
-			this.maximoAlunosCadastro.Width = 70;
-			// 
-			// MENSALIDADE3
-			// 
-			this.MENSALIDADE3.DataPropertyName = "MENSALIDADE";
-			this.MENSALIDADE3.HeaderText = "Mensalidade";
-			this.MENSALIDADE3.Name = "MENSALIDADE3";
-			this.MENSALIDADE3.ReadOnly = true;
-			this.MENSALIDADE3.Visible = false;
-			// 
-			// ID_MODALIDADE_CADASTRO
-			// 
-			this.ID_MODALIDADE_CADASTRO.DataPropertyName = "ID_MODALIDADE";
-			this.ID_MODALIDADE_CADASTRO.HeaderText = "ID_MODALIDADE";
-			this.ID_MODALIDADE_CADASTRO.Name = "ID_MODALIDADE_CADASTRO";
-			this.ID_MODALIDADE_CADASTRO.ReadOnly = true;
-			this.ID_MODALIDADE_CADASTRO.Visible = false;
-			// 
-			// ID_TURMA_CADASTRO
-			// 
-			this.ID_TURMA_CADASTRO.DataPropertyName = "ID_TURMA";
-			this.ID_TURMA_CADASTRO.HeaderText = "id turma";
-			this.ID_TURMA_CADASTRO.Name = "ID_TURMA_CADASTRO";
-			this.ID_TURMA_CADASTRO.ReadOnly = true;
-			this.ID_TURMA_CADASTRO.Visible = false;
 			// 
 			// label18
 			// 
@@ -1010,6 +802,266 @@
 			this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
 			this.dataGridViewImageColumn1.Width = 50;
 			// 
+			// NOME_MODALIDADE2
+			// 
+			this.NOME_MODALIDADE2.DataPropertyName = "NOME_MODALIDADE";
+			this.NOME_MODALIDADE2.HeaderText = "Modalidade";
+			this.NOME_MODALIDADE2.Name = "NOME_MODALIDADE2";
+			this.NOME_MODALIDADE2.ReadOnly = true;
+			this.NOME_MODALIDADE2.Width = 172;
+			// 
+			// NUMERO_TURMA2
+			// 
+			this.NUMERO_TURMA2.DataPropertyName = "NUMERO_TURMA";
+			this.NUMERO_TURMA2.HeaderText = "Turma";
+			this.NUMERO_TURMA2.Name = "NUMERO_TURMA2";
+			this.NUMERO_TURMA2.ReadOnly = true;
+			this.NUMERO_TURMA2.Width = 60;
+			// 
+			// VENCIMENTO2
+			// 
+			this.VENCIMENTO2.DataPropertyName = "VENCIMENTO";
+			this.VENCIMENTO2.HeaderText = "Vencimento";
+			this.VENCIMENTO2.Name = "VENCIMENTO2";
+			this.VENCIMENTO2.ReadOnly = true;
+			this.VENCIMENTO2.Width = 90;
+			// 
+			// MENSALIDADE2
+			// 
+			this.MENSALIDADE2.DataPropertyName = "MENSALIDADE";
+			this.MENSALIDADE2.HeaderText = "Mensalidade";
+			this.MENSALIDADE2.Name = "MENSALIDADE2";
+			this.MENSALIDADE2.ReadOnly = true;
+			this.MENSALIDADE2.Width = 90;
+			// 
+			// SITUACAO2
+			// 
+			this.SITUACAO2.DataPropertyName = "SITUACAO";
+			this.SITUACAO2.HeaderText = "Situação";
+			this.SITUACAO2.Name = "SITUACAO2";
+			this.SITUACAO2.ReadOnly = true;
+			this.SITUACAO2.Width = 80;
+			// 
+			// ID_TURMA2
+			// 
+			this.ID_TURMA2.DataPropertyName = "ID_TURMA";
+			this.ID_TURMA2.HeaderText = "ID_TURMA";
+			this.ID_TURMA2.Name = "ID_TURMA2";
+			this.ID_TURMA2.ReadOnly = true;
+			this.ID_TURMA2.Visible = false;
+			// 
+			// ID_MATRICULA2
+			// 
+			this.ID_MATRICULA2.DataPropertyName = "ID_MATRICULA";
+			this.ID_MATRICULA2.HeaderText = "ID_MATRICULA";
+			this.ID_MATRICULA2.Name = "ID_MATRICULA2";
+			this.ID_MATRICULA2.ReadOnly = true;
+			this.ID_MATRICULA2.Visible = false;
+			// 
+			// ID_MODALIDADE2
+			// 
+			this.ID_MODALIDADE2.DataPropertyName = "ID_MODALIDADE";
+			this.ID_MODALIDADE2.HeaderText = "ID_MODALIDADE";
+			this.ID_MODALIDADE2.Name = "ID_MODALIDADE2";
+			this.ID_MODALIDADE2.ReadOnly = true;
+			this.ID_MODALIDADE2.Visible = false;
+			// 
+			// ID_ALUNO2
+			// 
+			this.ID_ALUNO2.DataPropertyName = "ID_ALUNO";
+			this.ID_ALUNO2.HeaderText = "ID_ALUNO";
+			this.ID_ALUNO2.Name = "ID_ALUNO2";
+			this.ID_ALUNO2.ReadOnly = true;
+			this.ID_ALUNO2.Visible = false;
+			// 
+			// NOME_Aluno
+			// 
+			this.NOME_Aluno.DataPropertyName = "NOME_Aluno";
+			this.NOME_Aluno.HeaderText = "NOME_Aluno";
+			this.NOME_Aluno.Name = "NOME_Aluno";
+			this.NOME_Aluno.ReadOnly = true;
+			this.NOME_Aluno.Visible = false;
+			// 
+			// ALUNO_MATRICULADO1
+			// 
+			this.ALUNO_MATRICULADO1.DataPropertyName = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO1.HeaderText = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO1.Name = "ALUNO_MATRICULADO1";
+			this.ALUNO_MATRICULADO1.ReadOnly = true;
+			this.ALUNO_MATRICULADO1.Visible = false;
+			// 
+			// txtAlunoMatriculado
+			// 
+			this.txtAlunoMatriculado.Location = new System.Drawing.Point(537, 427);
+			this.txtAlunoMatriculado.Name = "txtAlunoMatriculado";
+			this.txtAlunoMatriculado.Size = new System.Drawing.Size(10, 22);
+			this.txtAlunoMatriculado.TabIndex = 22;
+			this.txtAlunoMatriculado.Visible = false;
+			// 
+			// NOME_MODALIDE
+			// 
+			this.NOME_MODALIDE.DataPropertyName = "NOME_MODALIDADE";
+			this.NOME_MODALIDE.HeaderText = "Modalidade";
+			this.NOME_MODALIDE.Name = "NOME_MODALIDE";
+			this.NOME_MODALIDE.ReadOnly = true;
+			this.NOME_MODALIDE.Width = 185;
+			// 
+			// NUMERO_TURMA
+			// 
+			this.NUMERO_TURMA.DataPropertyName = "NUMERO_TURMA";
+			this.NUMERO_TURMA.HeaderText = "Turma";
+			this.NUMERO_TURMA.Name = "NUMERO_TURMA";
+			this.NUMERO_TURMA.ReadOnly = true;
+			this.NUMERO_TURMA.Width = 70;
+			// 
+			// VENCIMENTO
+			// 
+			this.VENCIMENTO.DataPropertyName = "VENCIMENTO";
+			dataGridViewCellStyle5.NullValue = null;
+			this.VENCIMENTO.DefaultCellStyle = dataGridViewCellStyle5;
+			this.VENCIMENTO.HeaderText = "Vencimento";
+			this.VENCIMENTO.Name = "VENCIMENTO";
+			this.VENCIMENTO.ReadOnly = true;
+			// 
+			// MENSALIDADE
+			// 
+			this.MENSALIDADE.DataPropertyName = "MENSALIDADE";
+			dataGridViewCellStyle6.Format = "C2";
+			dataGridViewCellStyle6.NullValue = null;
+			this.MENSALIDADE.DefaultCellStyle = dataGridViewCellStyle6;
+			this.MENSALIDADE.HeaderText = "Mensalidade";
+			this.MENSALIDADE.Name = "MENSALIDADE";
+			this.MENSALIDADE.ReadOnly = true;
+			// 
+			// SITUACAO1
+			// 
+			this.SITUACAO1.DataPropertyName = "SITUACAO";
+			this.SITUACAO1.HeaderText = "Situação";
+			this.SITUACAO1.Name = "SITUACAO1";
+			this.SITUACAO1.ReadOnly = true;
+			this.SITUACAO1.Visible = false;
+			// 
+			// ID_ALUNO
+			// 
+			this.ID_ALUNO.DataPropertyName = "ID_ALUNO";
+			this.ID_ALUNO.HeaderText = "codigo aluno";
+			this.ID_ALUNO.Name = "ID_ALUNO";
+			this.ID_ALUNO.ReadOnly = true;
+			this.ID_ALUNO.Visible = false;
+			// 
+			// NOME_Aluno2
+			// 
+			this.NOME_Aluno2.DataPropertyName = "NOME_Aluno";
+			this.NOME_Aluno2.HeaderText = "NOME_Aluno";
+			this.NOME_Aluno2.Name = "NOME_Aluno2";
+			this.NOME_Aluno2.ReadOnly = true;
+			this.NOME_Aluno2.Visible = false;
+			// 
+			// ID_MATRICULA
+			// 
+			this.ID_MATRICULA.DataPropertyName = "ID_MATRICULA";
+			this.ID_MATRICULA.HeaderText = "CODIGO MATRICULA";
+			this.ID_MATRICULA.Name = "ID_MATRICULA";
+			this.ID_MATRICULA.ReadOnly = true;
+			this.ID_MATRICULA.Visible = false;
+			// 
+			// ID_TURMA
+			// 
+			this.ID_TURMA.DataPropertyName = "ID_TURMA";
+			this.ID_TURMA.HeaderText = "CODIGO TURMA";
+			this.ID_TURMA.Name = "ID_TURMA";
+			this.ID_TURMA.ReadOnly = true;
+			this.ID_TURMA.Visible = false;
+			// 
+			// ID_MODALIDADE
+			// 
+			this.ID_MODALIDADE.DataPropertyName = "ID_MODALIDADE";
+			this.ID_MODALIDADE.HeaderText = "CODIGO MODALIDADE";
+			this.ID_MODALIDADE.Name = "ID_MODALIDADE";
+			this.ID_MODALIDADE.ReadOnly = true;
+			this.ID_MODALIDADE.Visible = false;
+			// 
+			// ALUNO_MATRICULADO2
+			// 
+			this.ALUNO_MATRICULADO2.DataPropertyName = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO2.HeaderText = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO2.Name = "ALUNO_MATRICULADO2";
+			this.ALUNO_MATRICULADO2.ReadOnly = true;
+			this.ALUNO_MATRICULADO2.Visible = false;
+			// 
+			// btnEditar
+			// 
+			this.btnEditar.HeaderText = "";
+			this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+			this.btnEditar.Name = "btnEditar";
+			this.btnEditar.ReadOnly = true;
+			this.btnEditar.Width = 50;
+			// 
+			// ALUNO_MATRICULADO
+			// 
+			this.ALUNO_MATRICULADO.DataPropertyName = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO.HeaderText = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO.Name = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO.ReadOnly = true;
+			this.ALUNO_MATRICULADO.Visible = false;
+			// 
+			// NOME_MODALIDADE
+			// 
+			this.NOME_MODALIDADE.DataPropertyName = "NOME_MODALIDADE";
+			this.NOME_MODALIDADE.HeaderText = "Modalidade";
+			this.NOME_MODALIDADE.Name = "NOME_MODALIDADE";
+			this.NOME_MODALIDADE.ReadOnly = true;
+			this.NOME_MODALIDADE.Width = 210;
+			// 
+			// VagasSobrando
+			// 
+			this.VagasSobrando.DataPropertyName = "VagasSobrando";
+			this.VagasSobrando.HeaderText = "Vagas";
+			this.VagasSobrando.Name = "VagasSobrando";
+			this.VagasSobrando.ReadOnly = true;
+			this.VagasSobrando.Width = 70;
+			// 
+			// numeroTurmaCadastro
+			// 
+			this.numeroTurmaCadastro.DataPropertyName = "NUMERO_TURMA";
+			this.numeroTurmaCadastro.HeaderText = "Turma";
+			this.numeroTurmaCadastro.Name = "numeroTurmaCadastro";
+			this.numeroTurmaCadastro.ReadOnly = true;
+			this.numeroTurmaCadastro.Width = 80;
+			// 
+			// maximoAlunosCadastro
+			// 
+			this.maximoAlunosCadastro.DataPropertyName = "MAXIMO_ALUNOS";
+			this.maximoAlunosCadastro.HeaderText = "Maximo Vagas";
+			this.maximoAlunosCadastro.Name = "maximoAlunosCadastro";
+			this.maximoAlunosCadastro.ReadOnly = true;
+			this.maximoAlunosCadastro.Visible = false;
+			this.maximoAlunosCadastro.Width = 70;
+			// 
+			// MENSALIDADE3
+			// 
+			this.MENSALIDADE3.DataPropertyName = "MENSALIDADE";
+			this.MENSALIDADE3.HeaderText = "Mensalidade";
+			this.MENSALIDADE3.Name = "MENSALIDADE3";
+			this.MENSALIDADE3.ReadOnly = true;
+			this.MENSALIDADE3.Visible = false;
+			// 
+			// ID_MODALIDADE_CADASTRO
+			// 
+			this.ID_MODALIDADE_CADASTRO.DataPropertyName = "ID_MODALIDADE";
+			this.ID_MODALIDADE_CADASTRO.HeaderText = "ID_MODALIDADE";
+			this.ID_MODALIDADE_CADASTRO.Name = "ID_MODALIDADE_CADASTRO";
+			this.ID_MODALIDADE_CADASTRO.ReadOnly = true;
+			this.ID_MODALIDADE_CADASTRO.Visible = false;
+			// 
+			// ID_TURMA_CADASTRO
+			// 
+			this.ID_TURMA_CADASTRO.DataPropertyName = "ID_TURMA";
+			this.ID_TURMA_CADASTRO.HeaderText = "id turma";
+			this.ID_TURMA_CADASTRO.Name = "ID_TURMA_CADASTRO";
+			this.ID_TURMA_CADASTRO.ReadOnly = true;
+			this.ID_TURMA_CADASTRO.Visible = false;
+			// 
 			// txtAtiva
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1097,17 +1149,11 @@
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-		private System.Windows.Forms.DataGridViewImageColumn btnEditar;
-		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_MODALIDADE;
-		private System.Windows.Forms.DataGridViewTextBoxColumn numeroTurmaCadastro;
-		private System.Windows.Forms.DataGridViewTextBoxColumn maximoAlunosCadastro;
-		private System.Windows.Forms.DataGridViewTextBoxColumn MENSALIDADE3;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MODALIDADE_CADASTRO;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ID_TURMA_CADASTRO;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.TextBox txtParaAtivar;
 		private System.Windows.Forms.TextBox txtIdTurma;
 		private System.Windows.Forms.TextBox txtIdMatricula;
+		private System.Windows.Forms.TextBox txtAlunoMatriculado;
 		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_MODALIDADE2;
 		private System.Windows.Forms.DataGridViewTextBoxColumn NUMERO_TURMA2;
 		private System.Windows.Forms.DataGridViewTextBoxColumn VENCIMENTO2;
@@ -1118,6 +1164,7 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MODALIDADE2;
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_ALUNO2;
 		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_Aluno;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ALUNO_MATRICULADO1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_MODALIDE;
 		private System.Windows.Forms.DataGridViewTextBoxColumn NUMERO_TURMA;
 		private System.Windows.Forms.DataGridViewTextBoxColumn VENCIMENTO;
@@ -1128,5 +1175,15 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MATRICULA;
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_TURMA;
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MODALIDADE;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ALUNO_MATRICULADO2;
+		private System.Windows.Forms.DataGridViewImageColumn btnEditar;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ALUNO_MATRICULADO;
+		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_MODALIDADE;
+		private System.Windows.Forms.DataGridViewTextBoxColumn VagasSobrando;
+		private System.Windows.Forms.DataGridViewTextBoxColumn numeroTurmaCadastro;
+		private System.Windows.Forms.DataGridViewTextBoxColumn maximoAlunosCadastro;
+		private System.Windows.Forms.DataGridViewTextBoxColumn MENSALIDADE3;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MODALIDADE_CADASTRO;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID_TURMA_CADASTRO;
 	}
 }

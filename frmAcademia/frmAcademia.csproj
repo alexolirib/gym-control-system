@@ -100,7 +100,6 @@
     <Compile Include="Professores.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="pu.cs" />
     <Compile Include="Turma.cs" />
     <EmbeddedResource Include="frmAlunos.resx">
       <DependentUpon>frmAlunos.cs</DependentUpon>

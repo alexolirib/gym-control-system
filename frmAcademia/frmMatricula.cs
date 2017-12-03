@@ -12,11 +12,13 @@ namespace frmAcademia
 {
 	public partial class frmMatricula : Form
 	{
+		Turma novaTurma;
 		txtAtiva formulario;
 		matricula novaMatricula;
 		string nomeAluno;
 		int codAluno;
 		int codTurma;
+		int alunoMatriculado;
 		public frmMatricula(txtAtiva formulario, string nomeAluno, int codAluno)
 		{
 			InitializeComponent();
@@ -41,6 +43,7 @@ namespace frmAcademia
 			txtTurma.Text = matriculas.Rows[matriculas.CurrentRow.Index].Cells["numeroTurmaCadastro"].Value.ToString();
 			txtVagas.Text = matriculas.Rows[matriculas.CurrentRow.Index].Cells["maximoAlunosCadastro"].Value.ToString();
 			this.codTurma = Convert.ToInt32(matriculas.Rows[matriculas.CurrentRow.Index].Cells["ID_TURMA_CADASTRO"].Value.ToString());
+			this.alunoMatriculado = Convert.ToInt32(matriculas.Rows[matriculas.CurrentRow.Index].Cells["ALUNO_MATRICULADO"].Value.ToString());
 		}
 
 		private void btnSalvar_Click(object sender, EventArgs e)
@@ -57,6 +60,9 @@ namespace frmAcademia
 					novaMatricula = new matricula();
 					novaMatricula.Salvar(codAluno, codTurma, "ATIVO", Convert.ToInt32(txtVencimento.Text));
 					MessageBox.Show("Salvo com Sucesso!!");
+
+					novaTurma = new Turma();
+					novaTurma.alterarAlunoMatriculado(alunoMatriculado + 1, codTurma);
 					this.Close();
 				}
 			}				

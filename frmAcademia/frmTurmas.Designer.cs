@@ -50,20 +50,21 @@
 			this.NOME_MODALIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ID_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ID_MODADELIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ALUNO_MATRICULADO = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.btnEditar = new System.Windows.Forms.DataGridViewImageColumn();
 			this.btnExcluir = new System.Windows.Forms.DataGridViewImageColumn();
 			this.btnHorario = new System.Windows.Forms.DataGridViewImageColumn();
 			this.dgvHorario = new System.Windows.Forms.DataGridView();
-			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-			this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-			this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-			this.lblHorarios = new System.Windows.Forms.Label();
-			this.lblHorarios2 = new System.Windows.Forms.Label();
 			this.DIA_SEMANA = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.INICIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.FIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ID_HORARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.CODIGO_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+			this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+			this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+			this.lblHorarios = new System.Windows.Forms.Label();
+			this.lblHorarios2 = new System.Windows.Forms.Label();
 			this.toolStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.groupBox1.SuspendLayout();
@@ -81,6 +82,7 @@
 			this.toolStrip1.Size = new System.Drawing.Size(689, 38);
 			this.toolStrip1.TabIndex = 0;
 			this.toolStrip1.Text = "toolStrip1";
+			this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
 			// 
 			// btnNovo
 			// 
@@ -237,6 +239,7 @@
             this.NOME_MODALIDADE,
             this.ID_TURMA,
             this.ID_MODADELIDADE,
+            this.ALUNO_MATRICULADO,
             this.btnEditar,
             this.btnExcluir,
             this.btnHorario});
@@ -290,6 +293,14 @@
 			this.ID_MODADELIDADE.ReadOnly = true;
 			this.ID_MODADELIDADE.Visible = false;
 			// 
+			// ALUNO_MATRICULADO
+			// 
+			this.ALUNO_MATRICULADO.DataPropertyName = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO.HeaderText = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO.Name = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO.ReadOnly = true;
+			this.ALUNO_MATRICULADO.Visible = false;
+			// 
 			// btnEditar
 			// 
 			this.btnEditar.HeaderText = "";
@@ -335,6 +346,46 @@
 			this.dgvHorario.Size = new System.Drawing.Size(285, 206);
 			this.dgvHorario.TabIndex = 3;
 			this.dgvHorario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHorario_CellContentClick);
+			// 
+			// DIA_SEMANA
+			// 
+			this.DIA_SEMANA.DataPropertyName = "DIA_SEMANA";
+			this.DIA_SEMANA.HeaderText = "DIA DA SEMANA";
+			this.DIA_SEMANA.Name = "DIA_SEMANA";
+			this.DIA_SEMANA.ReadOnly = true;
+			this.DIA_SEMANA.Width = 162;
+			// 
+			// INICIO
+			// 
+			this.INICIO.DataPropertyName = "INICIO";
+			this.INICIO.HeaderText = "INICIO";
+			this.INICIO.Name = "INICIO";
+			this.INICIO.ReadOnly = true;
+			this.INICIO.Width = 60;
+			// 
+			// FIM
+			// 
+			this.FIM.DataPropertyName = "FIM";
+			this.FIM.HeaderText = "FIM";
+			this.FIM.Name = "FIM";
+			this.FIM.ReadOnly = true;
+			this.FIM.Width = 60;
+			// 
+			// ID_HORARIO
+			// 
+			this.ID_HORARIO.DataPropertyName = "ID_HORARIO";
+			this.ID_HORARIO.HeaderText = "ID_HORARIO";
+			this.ID_HORARIO.Name = "ID_HORARIO";
+			this.ID_HORARIO.ReadOnly = true;
+			this.ID_HORARIO.Visible = false;
+			// 
+			// CODIGO_TURMA
+			// 
+			this.CODIGO_TURMA.DataPropertyName = "ID_TURMA";
+			this.CODIGO_TURMA.HeaderText = "ID_TURMA";
+			this.CODIGO_TURMA.Name = "CODIGO_TURMA";
+			this.CODIGO_TURMA.ReadOnly = true;
+			this.CODIGO_TURMA.Visible = false;
 			// 
 			// dataGridViewImageColumn1
 			// 
@@ -382,46 +433,6 @@
 			this.lblHorarios2.Size = new System.Drawing.Size(225, 13);
 			this.lblHorarios2.TabIndex = 5;
 			this.lblHorarios2.Text = "Dê um duplo Clique na turma desejada";
-			// 
-			// DIA_SEMANA
-			// 
-			this.DIA_SEMANA.DataPropertyName = "DIA_SEMANA";
-			this.DIA_SEMANA.HeaderText = "DIA DA SEMANA";
-			this.DIA_SEMANA.Name = "DIA_SEMANA";
-			this.DIA_SEMANA.ReadOnly = true;
-			this.DIA_SEMANA.Width = 162;
-			// 
-			// INICIO
-			// 
-			this.INICIO.DataPropertyName = "INICIO";
-			this.INICIO.HeaderText = "INICIO";
-			this.INICIO.Name = "INICIO";
-			this.INICIO.ReadOnly = true;
-			this.INICIO.Width = 60;
-			// 
-			// FIM
-			// 
-			this.FIM.DataPropertyName = "FIM";
-			this.FIM.HeaderText = "FIM";
-			this.FIM.Name = "FIM";
-			this.FIM.ReadOnly = true;
-			this.FIM.Width = 60;
-			// 
-			// ID_HORARIO
-			// 
-			this.ID_HORARIO.DataPropertyName = "ID_HORARIO";
-			this.ID_HORARIO.HeaderText = "ID_HORARIO";
-			this.ID_HORARIO.Name = "ID_HORARIO";
-			this.ID_HORARIO.ReadOnly = true;
-			this.ID_HORARIO.Visible = false;
-			// 
-			// CODIGO_TURMA
-			// 
-			this.CODIGO_TURMA.DataPropertyName = "ID_TURMA";
-			this.CODIGO_TURMA.HeaderText = "ID_TURMA";
-			this.CODIGO_TURMA.Name = "CODIGO_TURMA";
-			this.CODIGO_TURMA.ReadOnly = true;
-			this.CODIGO_TURMA.Visible = false;
 			// 
 			// frmTurmas
 			// 
@@ -478,14 +489,6 @@
 		private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
 		private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
 		private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
-		private System.Windows.Forms.DataGridViewTextBoxColumn MAXIMO_ALUNOS;
-		private System.Windows.Forms.DataGridViewTextBoxColumn NUMERO_TURMA;
-		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_MODALIDADE;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ID_TURMA;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MODADELIDADE;
-		private System.Windows.Forms.DataGridViewImageColumn btnEditar;
-		private System.Windows.Forms.DataGridViewImageColumn btnExcluir;
-		private System.Windows.Forms.DataGridViewImageColumn btnHorario;
 		private System.Windows.Forms.Label lblHorarios;
 		private System.Windows.Forms.Label lblHorarios2;
 		private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA;
@@ -493,5 +496,14 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn FIM;
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_HORARIO;
 		private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA;
+		private System.Windows.Forms.DataGridViewTextBoxColumn MAXIMO_ALUNOS;
+		private System.Windows.Forms.DataGridViewTextBoxColumn NUMERO_TURMA;
+		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_MODALIDADE;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID_TURMA;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MODADELIDADE;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ALUNO_MATRICULADO;
+		private System.Windows.Forms.DataGridViewImageColumn btnEditar;
+		private System.Windows.Forms.DataGridViewImageColumn btnExcluir;
+		private System.Windows.Forms.DataGridViewImageColumn btnHorario;
 	}
 }
