@@ -93,6 +93,16 @@ namespace frmAcademia.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_clock_history_frame_64007 {
+            get {
+                object obj = ResourceManager.GetObject("if_clock_history_frame_64007", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_close_476323 {
             get {
                 object obj = ResourceManager.GetObject("if_close_476323", resourceCulture);
@@ -153,6 +163,16 @@ namespace frmAcademia.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_filter_299094 {
+            get {
+                object obj = ResourceManager.GetObject("if_filter_299094", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_Group_Meeting_Dark_80843 {
             get {
                 object obj = ResourceManager.GetObject("if_Group_Meeting_Dark_80843", resourceCulture);
@@ -183,6 +203,16 @@ namespace frmAcademia.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_money_36203 {
+            get {
+                object obj = ResourceManager.GetObject("if_money_36203", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_new_24_103173 {
             get {
                 object obj = ResourceManager.GetObject("if_new-24_103173", resourceCulture);
@@ -193,9 +223,29 @@ namespace frmAcademia.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_ordering_49597 {
+            get {
+                object obj = ResourceManager.GetObject("if_ordering_49597", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_personal_6628 {
             get {
                 object obj = ResourceManager.GetObject("if_personal_6628", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_Personal_trainer_2_753935 {
+            get {
+                object obj = ResourceManager.GetObject("if_Personal_trainer_2_753935", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

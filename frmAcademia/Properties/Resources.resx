@@ -124,9 +124,6 @@
   <data name="if_close_476323" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_close_476323.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_edit_173002" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_edit_173002.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="if_save_1730911" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_save_1730911.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,26 +133,44 @@
   <data name="if_ic_query_builder_48px_351994" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_ic_query_builder_48px_351994.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="if_edit_173002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_edit_173002.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="if_save_173091" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_save_173091.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aaa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_hand_biceps_310322" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_hand_biceps_310322.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_clock_history_frame_64007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_clock_history_frame_64007.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_cross-24_1031812" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_cross-24_1031812.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_cross-24_1031811" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_cross-24_1031811.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_new-24_103173" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_new-24_103173.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_hand_biceps_310322" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_hand_biceps_310322.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_Personal_trainer_2_753935" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_Personal_trainer_2_753935.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_clients_43573" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_clients_43573.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_personal_6628" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_personal_6628.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_clients_43573" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_clients_43573.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_money_36203" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_money_36203.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_new-24_103173" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_new-24_103173.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_ordering_49597" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_ordering_49597.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_081_Pen_183209" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_081_Pen_183209.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,7 +178,7 @@
   <data name="if_cross-24_103181" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_cross-24_103181.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_cross-24_1031812" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_cross-24_1031812.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_filter_299094" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_filter_299094.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

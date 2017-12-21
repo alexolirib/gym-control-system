@@ -12,12 +12,12 @@ namespace frmAcademia
 {
 	public partial class frmHorarios : Form
 	{
-		private int codigo;
+		private int idTurma;
 		private string modalidade, turma;
-		public frmHorarios(int codigo, string modalidade, string turma)
+		public frmHorarios(int idTurma, string modalidade, string turma)
 		{
 			InitializeComponent();
-			this.codigo = codigo;
+			this.idTurma = idTurma;
 			this.modalidade = modalidade;
 			this.turma = turma;
 		}
@@ -60,7 +60,7 @@ namespace frmAcademia
 					else
 					{
 						novoHorario = new horarios();
-						novoHorario.Salvar(codigo, cbxDia.Text, dtpInicio.Text, dtpFim.Text);
+						novoHorario.Salvar(idTurma, cbxDia.Text, dtpInicio.Text, dtpFim.Text);
 						MessageBox.Show("Salvo com sucesso!!");
 						ListarHorario(); 
 					}
@@ -76,7 +76,7 @@ namespace frmAcademia
 			try
 			{
 				novoHorario = new horarios();
-				dgvHorarios.DataSource = novoHorario.listar(codigo);
+				dgvHorarios.DataSource = novoHorario.listar(idTurma);
 				estilo();
 			}
 			catch (Exception ex)

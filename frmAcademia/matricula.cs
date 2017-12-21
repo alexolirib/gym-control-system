@@ -50,7 +50,9 @@ namespace frmAcademia
 					sql.Append("from Matricula inner join Turma on Matricula.ID_TURMA = Turma.ID_TURMA ");
 					sql.Append("inner join Modalidade on Turma.ID_MODALIDADE = Modalidade.ID_MODALIDADE ");
 					sql.Append("inner join Aluno on Aluno.ID_Aluno = Matricula.ID_ALUNO ");
-					sql.Append("where Aluno.ID_Aluno = @idAluno");
+					sql.Append("where Aluno.ID_Aluno = @idAluno ");
+					sql.Append("order by ID_MATRICULA desc");
+
 					
 					comandoSql.Parameters.Add(new SqlParameter("@idAluno", idAluno));
 

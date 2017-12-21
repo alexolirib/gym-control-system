@@ -90,6 +90,7 @@
     </Compile>
     <Compile Include="horarios.cs" />
     <Compile Include="matricula.cs" />
+    <Compile Include="Mensalidade.cs" />
     <Compile Include="modalidade.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -195,6 +196,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\if_cross-24_1031812.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Personal_trainer_2_753935.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_ordering_49597.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_clock_history_frame_64007.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_money_36203.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_filter_299094.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

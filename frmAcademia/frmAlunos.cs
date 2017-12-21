@@ -66,7 +66,7 @@ namespace frmAcademia
 			listarAlunos();
 			
 		}
-		public void estilo()
+		private void estilo()
 		{
 			int linhas = dgvAlunos.Rows.Count;
 

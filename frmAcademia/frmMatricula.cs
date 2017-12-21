@@ -12,6 +12,7 @@ namespace frmAcademia
 {
 	public partial class frmMatricula : Form
 	{
+		Mensalidade novaMensalidade;
 		Turma novaTurma;
 		txtAtiva formulario;
 		matricula novaMatricula;
@@ -30,7 +31,7 @@ namespace frmAcademia
 		
 		private void frmMatricula_Load(object sender, EventArgs e)
 		{
-			this.Text = "sca - Matrícula  do Aluno -   " + nomeAluno + "::";
+			this.Text = "sca - Matrícula do Aluno -   " + nomeAluno + "::";
 			txtVencimento.SelectedIndex = -1;
 			txtNomeAluno.Text = nomeAluno;
 			txtVencimento.Text = DateTime.Today.Day.ToString();
@@ -63,6 +64,9 @@ namespace frmAcademia
 
 					novaTurma = new Turma();
 					novaTurma.alterarAlunoMatriculado(alunoMatriculado + 1, codTurma);
+
+					formulario.verificaMensalidade();
+					
 					this.Close();
 				}
 			}				
@@ -74,7 +78,7 @@ namespace frmAcademia
 
 		private void frmMatricula_FormClosed(object sender, FormClosedEventArgs e)
 		{
-			formulario.listarMatricula(); 
+			formulario.listarMatricula();
 		}
 
 		private void txtVencimento_SelectedIndexChanged(object sender, EventArgs e)

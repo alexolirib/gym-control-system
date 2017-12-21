@@ -60,5 +60,6 @@ create table MENSALIDADE(
 	ID_MENSALIDADE int primary key identity not null,
 	ID_MATRICULA int foreign key references Matricula,
 	DATA_VENCIMENTO datetime not null,
+	DATA_PAGAMENTO datetime,
 	SITUACAO varchar(12) not null,
 )

@@ -28,8 +28,10 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(txtAtiva));
 			this.label1 = new System.Windows.Forms.Label();
 			this.tcAluno = new System.Windows.Forms.TabControl();
@@ -38,6 +40,17 @@
 			this.label14 = new System.Windows.Forms.Label();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.dgvTurma = new System.Windows.Forms.DataGridView();
+			this.NOME_MODALIDE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.NUMERO_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.VENCIMENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.MENSALIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.SITUACAO1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_ALUNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.NOME_Aluno2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_MATRICULA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_MODALIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ALUNO_MATRICULADO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.label12 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
 			this.txtCpf = new System.Windows.Forms.MaskedTextBox();
@@ -66,26 +79,15 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.tpMatricula = new System.Windows.Forms.TabPage();
+			this.pictureBox3 = new System.Windows.Forms.PictureBox();
+			this.txtAlunoMatriculado = new System.Windows.Forms.TextBox();
 			this.txtIdTurma = new System.Windows.Forms.TextBox();
 			this.txtIdMatricula = new System.Windows.Forms.TextBox();
 			this.txtParaAtivar = new System.Windows.Forms.TextBox();
 			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.btnSalvarMatricula = new System.Windows.Forms.Button();
-			this.btnExcluirMatricula = new System.Windows.Forms.Button();
 			this.label20 = new System.Windows.Forms.Label();
 			this.label19 = new System.Windows.Forms.Label();
 			this.dgvMatriculas = new System.Windows.Forms.DataGridView();
-			this.dgvTurmasCadastro = new System.Windows.Forms.DataGridView();
-			this.label18 = new System.Windows.Forms.Label();
-			this.label17 = new System.Windows.Forms.Label();
-			this.chbAtivar = new System.Windows.Forms.CheckBox();
-			this.label16 = new System.Windows.Forms.Label();
-			this.cbxVencimento = new System.Windows.Forms.ComboBox();
-			this.label15 = new System.Windows.Forms.Label();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.txtCodAluno = new System.Windows.Forms.TextBox();
-			this.txtNomeAluno = new System.Windows.Forms.TextBox();
-			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
 			this.NOME_MODALIDADE2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.NUMERO_TURMA2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.VENCIMENTO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -97,19 +99,8 @@
 			this.ID_ALUNO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.NOME_Aluno = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ALUNO_MATRICULADO1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.txtAlunoMatriculado = new System.Windows.Forms.TextBox();
-			this.NOME_MODALIDE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.NUMERO_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.VENCIMENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.MENSALIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.SITUACAO1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_ALUNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.NOME_Aluno2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_MATRICULA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ID_MODALIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ALUNO_MATRICULADO2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.btnEditar = new System.Windows.Forms.DataGridViewImageColumn();
+			this.dgvTurmasCadastro = new System.Windows.Forms.DataGridView();
+			this.btnHorario = new System.Windows.Forms.DataGridViewImageColumn();
 			this.ALUNO_MATRICULADO = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.NOME_MODALIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.VagasSobrando = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -118,6 +109,38 @@
 			this.MENSALIDADE3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ID_MODALIDADE_CADASTRO = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ID_TURMA_CADASTRO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.label18 = new System.Windows.Forms.Label();
+			this.label17 = new System.Windows.Forms.Label();
+			this.chbAtivar = new System.Windows.Forms.CheckBox();
+			this.label16 = new System.Windows.Forms.Label();
+			this.cbxVencimento = new System.Windows.Forms.ComboBox();
+			this.label15 = new System.Windows.Forms.Label();
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.txtCodAluno = new System.Windows.Forms.TextBox();
+			this.txtNomeAluno = new System.Windows.Forms.TextBox();
+			this.btnSalvarMatricula = new System.Windows.Forms.Button();
+			this.btnExcluirMatricula = new System.Windows.Forms.Button();
+			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.dgvMensalidade = new System.Windows.Forms.DataGridView();
+			this.NOME_MODALIDADE10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.DATA_VENCIMENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.DATA_PAGAMENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.MENSALIDADE10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.SITUACAO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_MODALIDADE10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_MENSALIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_MATRICULA10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ID_Aluno3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.groupBox4 = new System.Windows.Forms.GroupBox();
+			this.button1 = new System.Windows.Forms.Button();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.txtAtraso = new System.Windows.Forms.TextBox();
+			this.label22 = new System.Windows.Forms.Label();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.cbSiatuacao = new System.Windows.Forms.ComboBox();
+			this.label21 = new System.Windows.Forms.Label();
+			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+			this.btnFiltro = new System.Windows.Forms.Button();
 			this.tcAluno.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -125,9 +148,15 @@
 			this.toolStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.tpMatricula.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvMatriculas)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvTurmasCadastro)).BeginInit();
 			this.groupBox1.SuspendLayout();
+			this.tabPage2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgvMensalidade)).BeginInit();
+			this.groupBox4.SuspendLayout();
+			this.groupBox3.SuspendLayout();
+			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -145,6 +174,7 @@
 			// 
 			this.tcAluno.Controls.Add(this.tabPage1);
 			this.tcAluno.Controls.Add(this.tpMatricula);
+			this.tcAluno.Controls.Add(this.tabPage2);
 			this.tcAluno.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tcAluno.Location = new System.Drawing.Point(0, 0);
 			this.tcAluno.Margin = new System.Windows.Forms.Padding(4);
@@ -246,6 +276,98 @@
 			this.dgvTurma.RowHeadersVisible = false;
 			this.dgvTurma.Size = new System.Drawing.Size(479, 150);
 			this.dgvTurma.TabIndex = 27;
+			this.dgvTurma.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTurma_CellContentClick);
+			// 
+			// NOME_MODALIDE
+			// 
+			this.NOME_MODALIDE.DataPropertyName = "NOME_MODALIDADE";
+			this.NOME_MODALIDE.HeaderText = "Modalidade";
+			this.NOME_MODALIDE.Name = "NOME_MODALIDE";
+			this.NOME_MODALIDE.ReadOnly = true;
+			this.NOME_MODALIDE.Width = 185;
+			// 
+			// NUMERO_TURMA
+			// 
+			this.NUMERO_TURMA.DataPropertyName = "NUMERO_TURMA";
+			this.NUMERO_TURMA.HeaderText = "Turma";
+			this.NUMERO_TURMA.Name = "NUMERO_TURMA";
+			this.NUMERO_TURMA.ReadOnly = true;
+			this.NUMERO_TURMA.Width = 70;
+			// 
+			// VENCIMENTO
+			// 
+			this.VENCIMENTO.DataPropertyName = "VENCIMENTO";
+			dataGridViewCellStyle1.NullValue = null;
+			this.VENCIMENTO.DefaultCellStyle = dataGridViewCellStyle1;
+			this.VENCIMENTO.HeaderText = "Vencimento";
+			this.VENCIMENTO.Name = "VENCIMENTO";
+			this.VENCIMENTO.ReadOnly = true;
+			// 
+			// MENSALIDADE
+			// 
+			this.MENSALIDADE.DataPropertyName = "MENSALIDADE";
+			dataGridViewCellStyle2.Format = "C2";
+			dataGridViewCellStyle2.NullValue = null;
+			this.MENSALIDADE.DefaultCellStyle = dataGridViewCellStyle2;
+			this.MENSALIDADE.HeaderText = "Mensalidade";
+			this.MENSALIDADE.Name = "MENSALIDADE";
+			this.MENSALIDADE.ReadOnly = true;
+			// 
+			// SITUACAO1
+			// 
+			this.SITUACAO1.DataPropertyName = "SITUACAO";
+			this.SITUACAO1.HeaderText = "Situação";
+			this.SITUACAO1.Name = "SITUACAO1";
+			this.SITUACAO1.ReadOnly = true;
+			this.SITUACAO1.Visible = false;
+			// 
+			// ID_ALUNO
+			// 
+			this.ID_ALUNO.DataPropertyName = "ID_ALUNO";
+			this.ID_ALUNO.HeaderText = "codigo aluno";
+			this.ID_ALUNO.Name = "ID_ALUNO";
+			this.ID_ALUNO.ReadOnly = true;
+			this.ID_ALUNO.Visible = false;
+			// 
+			// NOME_Aluno2
+			// 
+			this.NOME_Aluno2.DataPropertyName = "NOME_Aluno";
+			this.NOME_Aluno2.HeaderText = "NOME_Aluno";
+			this.NOME_Aluno2.Name = "NOME_Aluno2";
+			this.NOME_Aluno2.ReadOnly = true;
+			this.NOME_Aluno2.Visible = false;
+			// 
+			// ID_MATRICULA
+			// 
+			this.ID_MATRICULA.DataPropertyName = "ID_MATRICULA";
+			this.ID_MATRICULA.HeaderText = "CODIGO MATRICULA";
+			this.ID_MATRICULA.Name = "ID_MATRICULA";
+			this.ID_MATRICULA.ReadOnly = true;
+			this.ID_MATRICULA.Visible = false;
+			// 
+			// ID_TURMA
+			// 
+			this.ID_TURMA.DataPropertyName = "ID_TURMA";
+			this.ID_TURMA.HeaderText = "CODIGO TURMA";
+			this.ID_TURMA.Name = "ID_TURMA";
+			this.ID_TURMA.ReadOnly = true;
+			this.ID_TURMA.Visible = false;
+			// 
+			// ID_MODALIDADE
+			// 
+			this.ID_MODALIDADE.DataPropertyName = "ID_MODALIDADE";
+			this.ID_MODALIDADE.HeaderText = "CODIGO MODALIDADE";
+			this.ID_MODALIDADE.Name = "ID_MODALIDADE";
+			this.ID_MODALIDADE.ReadOnly = true;
+			this.ID_MODALIDADE.Visible = false;
+			// 
+			// ALUNO_MATRICULADO2
+			// 
+			this.ALUNO_MATRICULADO2.DataPropertyName = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO2.HeaderText = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO2.Name = "ALUNO_MATRICULADO2";
+			this.ALUNO_MATRICULADO2.ReadOnly = true;
+			this.ALUNO_MATRICULADO2.Visible = false;
 			// 
 			// label12
 			// 
@@ -495,13 +617,12 @@
 			// tpMatricula
 			// 
 			this.tpMatricula.BackColor = System.Drawing.SystemColors.Control;
+			this.tpMatricula.Controls.Add(this.pictureBox3);
 			this.tpMatricula.Controls.Add(this.txtAlunoMatriculado);
 			this.tpMatricula.Controls.Add(this.txtIdTurma);
 			this.tpMatricula.Controls.Add(this.txtIdMatricula);
 			this.tpMatricula.Controls.Add(this.txtParaAtivar);
 			this.tpMatricula.Controls.Add(this.textBox1);
-			this.tpMatricula.Controls.Add(this.btnSalvarMatricula);
-			this.tpMatricula.Controls.Add(this.btnExcluirMatricula);
 			this.tpMatricula.Controls.Add(this.label20);
 			this.tpMatricula.Controls.Add(this.label19);
 			this.tpMatricula.Controls.Add(this.dgvMatriculas);
@@ -513,6 +634,8 @@
 			this.tpMatricula.Controls.Add(this.cbxVencimento);
 			this.tpMatricula.Controls.Add(this.label15);
 			this.tpMatricula.Controls.Add(this.groupBox1);
+			this.tpMatricula.Controls.Add(this.btnSalvarMatricula);
+			this.tpMatricula.Controls.Add(this.btnExcluirMatricula);
 			this.tpMatricula.Location = new System.Drawing.Point(4, 25);
 			this.tpMatricula.Margin = new System.Windows.Forms.Padding(4);
 			this.tpMatricula.Name = "tpMatricula";
@@ -521,6 +644,24 @@
 			this.tpMatricula.TabIndex = 1;
 			this.tpMatricula.Text = "Matricular";
 			this.tpMatricula.Click += new System.EventHandler(this.tabPsage2_Click);
+			// 
+			// pictureBox3
+			// 
+			this.pictureBox3.Image = global::frmAcademia.Properties.Resources.if_ordering_49597;
+			this.pictureBox3.Location = new System.Drawing.Point(3, 24);
+			this.pictureBox3.Name = "pictureBox3";
+			this.pictureBox3.Size = new System.Drawing.Size(73, 50);
+			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox3.TabIndex = 23;
+			this.pictureBox3.TabStop = false;
+			// 
+			// txtAlunoMatriculado
+			// 
+			this.txtAlunoMatriculado.Location = new System.Drawing.Point(537, 427);
+			this.txtAlunoMatriculado.Name = "txtAlunoMatriculado";
+			this.txtAlunoMatriculado.Size = new System.Drawing.Size(10, 22);
+			this.txtAlunoMatriculado.TabIndex = 22;
+			this.txtAlunoMatriculado.Visible = false;
 			// 
 			// txtIdTurma
 			// 
@@ -558,28 +699,6 @@
 			this.textBox1.Size = new System.Drawing.Size(282, 74);
 			this.textBox1.TabIndex = 16;
 			this.textBox1.Text = "Clique duas vezes na Modalidade desejada para fazer a matrícula do aluno ";
-			// 
-			// btnSalvarMatricula
-			// 
-			this.btnSalvarMatricula.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSalvarMatricula.Image = global::frmAcademia.Properties.Resources.if_save_1730911;
-			this.btnSalvarMatricula.Location = new System.Drawing.Point(140, 108);
-			this.btnSalvarMatricula.Name = "btnSalvarMatricula";
-			this.btnSalvarMatricula.Size = new System.Drawing.Size(64, 49);
-			this.btnSalvarMatricula.TabIndex = 15;
-			this.btnSalvarMatricula.UseVisualStyleBackColor = true;
-			this.btnSalvarMatricula.Click += new System.EventHandler(this.btnSalvarMatricula_Click);
-			// 
-			// btnExcluirMatricula
-			// 
-			this.btnExcluirMatricula.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnExcluirMatricula.Image = global::frmAcademia.Properties.Resources.if_cross_24_1031812;
-			this.btnExcluirMatricula.Location = new System.Drawing.Point(140, 163);
-			this.btnExcluirMatricula.Name = "btnExcluirMatricula";
-			this.btnExcluirMatricula.Size = new System.Drawing.Size(64, 49);
-			this.btnExcluirMatricula.TabIndex = 14;
-			this.btnExcluirMatricula.UseVisualStyleBackColor = true;
-			this.btnExcluirMatricula.Click += new System.EventHandler(this.btnExcluirMatricula_Click);
 			// 
 			// label20
 			// 
@@ -636,6 +755,94 @@
 			this.dgvMatriculas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMatriculas_CellContentClick);
 			this.dgvMatriculas.DoubleClick += new System.EventHandler(this.dgvMatriculas_DoubleClick);
 			// 
+			// NOME_MODALIDADE2
+			// 
+			this.NOME_MODALIDADE2.DataPropertyName = "NOME_MODALIDADE";
+			this.NOME_MODALIDADE2.HeaderText = "Modalidade";
+			this.NOME_MODALIDADE2.Name = "NOME_MODALIDADE2";
+			this.NOME_MODALIDADE2.ReadOnly = true;
+			this.NOME_MODALIDADE2.Width = 172;
+			// 
+			// NUMERO_TURMA2
+			// 
+			this.NUMERO_TURMA2.DataPropertyName = "NUMERO_TURMA";
+			this.NUMERO_TURMA2.HeaderText = "Turma";
+			this.NUMERO_TURMA2.Name = "NUMERO_TURMA2";
+			this.NUMERO_TURMA2.ReadOnly = true;
+			this.NUMERO_TURMA2.Width = 60;
+			// 
+			// VENCIMENTO2
+			// 
+			this.VENCIMENTO2.DataPropertyName = "VENCIMENTO";
+			this.VENCIMENTO2.HeaderText = "Vencimento";
+			this.VENCIMENTO2.Name = "VENCIMENTO2";
+			this.VENCIMENTO2.ReadOnly = true;
+			this.VENCIMENTO2.Width = 90;
+			// 
+			// MENSALIDADE2
+			// 
+			this.MENSALIDADE2.DataPropertyName = "MENSALIDADE";
+			this.MENSALIDADE2.HeaderText = "Valor";
+			this.MENSALIDADE2.Name = "MENSALIDADE2";
+			this.MENSALIDADE2.ReadOnly = true;
+			this.MENSALIDADE2.Width = 90;
+			// 
+			// SITUACAO2
+			// 
+			this.SITUACAO2.DataPropertyName = "SITUACAO";
+			this.SITUACAO2.HeaderText = "Situação";
+			this.SITUACAO2.Name = "SITUACAO2";
+			this.SITUACAO2.ReadOnly = true;
+			this.SITUACAO2.Width = 80;
+			// 
+			// ID_TURMA2
+			// 
+			this.ID_TURMA2.DataPropertyName = "ID_TURMA";
+			this.ID_TURMA2.HeaderText = "ID_TURMA";
+			this.ID_TURMA2.Name = "ID_TURMA2";
+			this.ID_TURMA2.ReadOnly = true;
+			this.ID_TURMA2.Visible = false;
+			// 
+			// ID_MATRICULA2
+			// 
+			this.ID_MATRICULA2.DataPropertyName = "ID_MATRICULA";
+			this.ID_MATRICULA2.HeaderText = "ID_MATRICULA";
+			this.ID_MATRICULA2.Name = "ID_MATRICULA2";
+			this.ID_MATRICULA2.ReadOnly = true;
+			this.ID_MATRICULA2.Visible = false;
+			// 
+			// ID_MODALIDADE2
+			// 
+			this.ID_MODALIDADE2.DataPropertyName = "ID_MODALIDADE";
+			this.ID_MODALIDADE2.HeaderText = "ID_MODALIDADE";
+			this.ID_MODALIDADE2.Name = "ID_MODALIDADE2";
+			this.ID_MODALIDADE2.ReadOnly = true;
+			this.ID_MODALIDADE2.Visible = false;
+			// 
+			// ID_ALUNO2
+			// 
+			this.ID_ALUNO2.DataPropertyName = "ID_ALUNO";
+			this.ID_ALUNO2.HeaderText = "ID_ALUNO";
+			this.ID_ALUNO2.Name = "ID_ALUNO2";
+			this.ID_ALUNO2.ReadOnly = true;
+			this.ID_ALUNO2.Visible = false;
+			// 
+			// NOME_Aluno
+			// 
+			this.NOME_Aluno.DataPropertyName = "NOME_Aluno";
+			this.NOME_Aluno.HeaderText = "NOME_Aluno";
+			this.NOME_Aluno.Name = "NOME_Aluno";
+			this.NOME_Aluno.ReadOnly = true;
+			this.NOME_Aluno.Visible = false;
+			// 
+			// ALUNO_MATRICULADO1
+			// 
+			this.ALUNO_MATRICULADO1.DataPropertyName = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO1.HeaderText = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO1.Name = "ALUNO_MATRICULADO1";
+			this.ALUNO_MATRICULADO1.ReadOnly = true;
+			this.ALUNO_MATRICULADO1.Visible = false;
+			// 
 			// dgvTurmasCadastro
 			// 
 			this.dgvTurmasCadastro.AllowUserToAddRows = false;
@@ -645,7 +852,7 @@
 			this.dgvTurmasCadastro.BackgroundColor = System.Drawing.Color.White;
 			this.dgvTurmasCadastro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvTurmasCadastro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.btnEditar,
+            this.btnHorario,
             this.ALUNO_MATRICULADO,
             this.NOME_MODALIDADE,
             this.VagasSobrando,
@@ -663,6 +870,79 @@
 			this.dgvTurmasCadastro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTurmas_CellContentClick);
 			this.dgvTurmasCadastro.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTurmasCadastro_CellEndEdit);
 			this.dgvTurmasCadastro.DoubleClick += new System.EventHandler(this.dgvTurmasCadastro_DoubleClick);
+			// 
+			// btnHorario
+			// 
+			this.btnHorario.HeaderText = "";
+			this.btnHorario.Image = global::frmAcademia.Properties.Resources.if_clock_history_frame_64007;
+			this.btnHorario.Name = "btnHorario";
+			this.btnHorario.ReadOnly = true;
+			this.btnHorario.Width = 50;
+			// 
+			// ALUNO_MATRICULADO
+			// 
+			this.ALUNO_MATRICULADO.DataPropertyName = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO.HeaderText = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO.Name = "ALUNO_MATRICULADO";
+			this.ALUNO_MATRICULADO.ReadOnly = true;
+			this.ALUNO_MATRICULADO.Visible = false;
+			// 
+			// NOME_MODALIDADE
+			// 
+			this.NOME_MODALIDADE.DataPropertyName = "NOME_MODALIDADE";
+			this.NOME_MODALIDADE.HeaderText = "Modalidade";
+			this.NOME_MODALIDADE.Name = "NOME_MODALIDADE";
+			this.NOME_MODALIDADE.ReadOnly = true;
+			this.NOME_MODALIDADE.Width = 210;
+			// 
+			// VagasSobrando
+			// 
+			this.VagasSobrando.DataPropertyName = "VagasSobrando";
+			this.VagasSobrando.HeaderText = "Vagas";
+			this.VagasSobrando.Name = "VagasSobrando";
+			this.VagasSobrando.ReadOnly = true;
+			this.VagasSobrando.Width = 70;
+			// 
+			// numeroTurmaCadastro
+			// 
+			this.numeroTurmaCadastro.DataPropertyName = "NUMERO_TURMA";
+			this.numeroTurmaCadastro.HeaderText = "Turma";
+			this.numeroTurmaCadastro.Name = "numeroTurmaCadastro";
+			this.numeroTurmaCadastro.ReadOnly = true;
+			this.numeroTurmaCadastro.Width = 80;
+			// 
+			// maximoAlunosCadastro
+			// 
+			this.maximoAlunosCadastro.DataPropertyName = "MAXIMO_ALUNOS";
+			this.maximoAlunosCadastro.HeaderText = "Maximo Vagas";
+			this.maximoAlunosCadastro.Name = "maximoAlunosCadastro";
+			this.maximoAlunosCadastro.ReadOnly = true;
+			this.maximoAlunosCadastro.Visible = false;
+			this.maximoAlunosCadastro.Width = 70;
+			// 
+			// MENSALIDADE3
+			// 
+			this.MENSALIDADE3.DataPropertyName = "MENSALIDADE";
+			this.MENSALIDADE3.HeaderText = "Mensalidade";
+			this.MENSALIDADE3.Name = "MENSALIDADE3";
+			this.MENSALIDADE3.ReadOnly = true;
+			this.MENSALIDADE3.Visible = false;
+			// 
+			// ID_MODALIDADE_CADASTRO
+			// 
+			this.ID_MODALIDADE_CADASTRO.DataPropertyName = "ID_MODALIDADE";
+			this.ID_MODALIDADE_CADASTRO.HeaderText = "ID_MODALIDADE";
+			this.ID_MODALIDADE_CADASTRO.Name = "ID_MODALIDADE_CADASTRO";
+			this.ID_MODALIDADE_CADASTRO.ReadOnly = true;
+			this.ID_MODALIDADE_CADASTRO.Visible = false;
+			// 
+			// ID_TURMA_CADASTRO
+			// 
+			this.ID_TURMA_CADASTRO.DataPropertyName = "ID_TURMA";
+			this.ID_TURMA_CADASTRO.HeaderText = "id turma";
+			this.ID_TURMA_CADASTRO.Name = "ID_TURMA_CADASTRO";
+			this.ID_TURMA_CADASTRO.ReadOnly = true;
+			this.ID_TURMA_CADASTRO.Visible = false;
 			// 
 			// label18
 			// 
@@ -795,272 +1075,266 @@
 			this.txtNomeAluno.Size = new System.Drawing.Size(536, 25);
 			this.txtNomeAluno.TabIndex = 0;
 			// 
+			// btnSalvarMatricula
+			// 
+			this.btnSalvarMatricula.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSalvarMatricula.Image = global::frmAcademia.Properties.Resources.if_save_1730911;
+			this.btnSalvarMatricula.Location = new System.Drawing.Point(140, 108);
+			this.btnSalvarMatricula.Name = "btnSalvarMatricula";
+			this.btnSalvarMatricula.Size = new System.Drawing.Size(64, 49);
+			this.btnSalvarMatricula.TabIndex = 15;
+			this.btnSalvarMatricula.UseVisualStyleBackColor = true;
+			this.btnSalvarMatricula.Click += new System.EventHandler(this.btnSalvarMatricula_Click);
+			// 
+			// btnExcluirMatricula
+			// 
+			this.btnExcluirMatricula.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnExcluirMatricula.Image = global::frmAcademia.Properties.Resources.if_cross_24_1031812;
+			this.btnExcluirMatricula.Location = new System.Drawing.Point(140, 163);
+			this.btnExcluirMatricula.Name = "btnExcluirMatricula";
+			this.btnExcluirMatricula.Size = new System.Drawing.Size(64, 49);
+			this.btnExcluirMatricula.TabIndex = 14;
+			this.btnExcluirMatricula.UseVisualStyleBackColor = true;
+			this.btnExcluirMatricula.Click += new System.EventHandler(this.btnExcluirMatricula_Click);
+			// 
+			// tabPage2
+			// 
+			this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+			this.tabPage2.Controls.Add(this.dgvMensalidade);
+			this.tabPage2.Controls.Add(this.groupBox4);
+			this.tabPage2.Controls.Add(this.groupBox3);
+			this.tabPage2.Controls.Add(this.groupBox2);
+			this.tabPage2.Location = new System.Drawing.Point(4, 25);
+			this.tabPage2.Name = "tabPage2";
+			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage2.Size = new System.Drawing.Size(713, 457);
+			this.tabPage2.TabIndex = 2;
+			this.tabPage2.Text = "Mensalidade";
+			// 
+			// dgvMensalidade
+			// 
+			this.dgvMensalidade.AllowUserToAddRows = false;
+			this.dgvMensalidade.AllowUserToDeleteRows = false;
+			this.dgvMensalidade.AllowUserToResizeColumns = false;
+			this.dgvMensalidade.AllowUserToResizeRows = false;
+			this.dgvMensalidade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvMensalidade.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NOME_MODALIDADE10,
+            this.DATA_VENCIMENTO,
+            this.DATA_PAGAMENTO,
+            this.MENSALIDADE10,
+            this.SITUACAO,
+            this.ID_MODALIDADE10,
+            this.ID_MENSALIDADE,
+            this.ID_MATRICULA10,
+            this.ID_Aluno3});
+			this.dgvMensalidade.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.dgvMensalidade.Location = new System.Drawing.Point(3, 102);
+			this.dgvMensalidade.Name = "dgvMensalidade";
+			this.dgvMensalidade.ReadOnly = true;
+			this.dgvMensalidade.RowHeadersVisible = false;
+			this.dgvMensalidade.ShowCellErrors = false;
+			this.dgvMensalidade.ShowCellToolTips = false;
+			this.dgvMensalidade.ShowEditingIcon = false;
+			this.dgvMensalidade.ShowRowErrors = false;
+			this.dgvMensalidade.Size = new System.Drawing.Size(707, 352);
+			this.dgvMensalidade.TabIndex = 8;
+			// 
+			// NOME_MODALIDADE10
+			// 
+			this.NOME_MODALIDADE10.DataPropertyName = "NOME_MODALIDADE";
+			this.NOME_MODALIDADE10.HeaderText = "Modalidade";
+			this.NOME_MODALIDADE10.Name = "NOME_MODALIDADE10";
+			this.NOME_MODALIDADE10.ReadOnly = true;
+			this.NOME_MODALIDADE10.Width = 230;
+			// 
+			// DATA_VENCIMENTO
+			// 
+			this.DATA_VENCIMENTO.DataPropertyName = "DATA_VENCIMENTO";
+			dataGridViewCellStyle3.Format = "d";
+			dataGridViewCellStyle3.NullValue = null;
+			this.DATA_VENCIMENTO.DefaultCellStyle = dataGridViewCellStyle3;
+			this.DATA_VENCIMENTO.HeaderText = "Vencimento";
+			this.DATA_VENCIMENTO.Name = "DATA_VENCIMENTO";
+			this.DATA_VENCIMENTO.ReadOnly = true;
+			this.DATA_VENCIMENTO.Width = 130;
+			// 
+			// DATA_PAGAMENTO
+			// 
+			this.DATA_PAGAMENTO.DataPropertyName = "DATA_PAGAMENTO";
+			this.DATA_PAGAMENTO.HeaderText = "Data pagamento";
+			this.DATA_PAGAMENTO.Name = "DATA_PAGAMENTO";
+			this.DATA_PAGAMENTO.ReadOnly = true;
+			this.DATA_PAGAMENTO.Width = 150;
+			// 
+			// MENSALIDADE10
+			// 
+			this.MENSALIDADE10.DataPropertyName = "MENSALIDADE";
+			dataGridViewCellStyle4.Format = "C2";
+			dataGridViewCellStyle4.NullValue = null;
+			this.MENSALIDADE10.DefaultCellStyle = dataGridViewCellStyle4;
+			this.MENSALIDADE10.HeaderText = "Valor";
+			this.MENSALIDADE10.Name = "MENSALIDADE10";
+			this.MENSALIDADE10.ReadOnly = true;
+			this.MENSALIDADE10.Width = 94;
+			// 
+			// SITUACAO
+			// 
+			this.SITUACAO.DataPropertyName = "SITUACAO";
+			this.SITUACAO.HeaderText = "Situação";
+			this.SITUACAO.Name = "SITUACAO";
+			this.SITUACAO.ReadOnly = true;
+			// 
+			// ID_MODALIDADE10
+			// 
+			this.ID_MODALIDADE10.DataPropertyName = "ID_MODALIDADE";
+			this.ID_MODALIDADE10.HeaderText = "idModalidade";
+			this.ID_MODALIDADE10.Name = "ID_MODALIDADE10";
+			this.ID_MODALIDADE10.ReadOnly = true;
+			this.ID_MODALIDADE10.Visible = false;
+			// 
+			// ID_MENSALIDADE
+			// 
+			this.ID_MENSALIDADE.DataPropertyName = "ID_MENSALIDADE";
+			this.ID_MENSALIDADE.HeaderText = "ID_MENSALIDADE";
+			this.ID_MENSALIDADE.Name = "ID_MENSALIDADE";
+			this.ID_MENSALIDADE.ReadOnly = true;
+			this.ID_MENSALIDADE.Visible = false;
+			// 
+			// ID_MATRICULA10
+			// 
+			this.ID_MATRICULA10.DataPropertyName = "ID_MATRICULA";
+			this.ID_MATRICULA10.HeaderText = "ID_MATRICULA";
+			this.ID_MATRICULA10.Name = "ID_MATRICULA10";
+			this.ID_MATRICULA10.ReadOnly = true;
+			this.ID_MATRICULA10.Visible = false;
+			// 
+			// ID_Aluno3
+			// 
+			this.ID_Aluno3.DataPropertyName = "ID_Aluno";
+			this.ID_Aluno3.HeaderText = "ID_Aluno";
+			this.ID_Aluno3.Name = "ID_Aluno3";
+			this.ID_Aluno3.ReadOnly = true;
+			this.ID_Aluno3.Visible = false;
+			// 
+			// groupBox4
+			// 
+			this.groupBox4.Controls.Add(this.button1);
+			this.groupBox4.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.groupBox4.ForeColor = System.Drawing.SystemColors.HotTrack;
+			this.groupBox4.Location = new System.Drawing.Point(524, 6);
+			this.groupBox4.Name = "groupBox4";
+			this.groupBox4.Size = new System.Drawing.Size(181, 90);
+			this.groupBox4.TabIndex = 7;
+			this.groupBox4.TabStop = false;
+			this.groupBox4.Text = "Controle";
+			// 
+			// button1
+			// 
+			this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button1.Image = global::frmAcademia.Properties.Resources.if_money_36203;
+			this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.button1.Location = new System.Drawing.Point(24, 34);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(117, 47);
+			this.button1.TabIndex = 0;
+			this.button1.Text = "Pagamento";
+			this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// groupBox3
+			// 
+			this.groupBox3.Controls.Add(this.txtAtraso);
+			this.groupBox3.Controls.Add(this.label22);
+			this.groupBox3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.groupBox3.ForeColor = System.Drawing.SystemColors.HotTrack;
+			this.groupBox3.Location = new System.Drawing.Point(349, 6);
+			this.groupBox3.Name = "groupBox3";
+			this.groupBox3.Size = new System.Drawing.Size(169, 90);
+			this.groupBox3.TabIndex = 7;
+			this.groupBox3.TabStop = false;
+			this.groupBox3.Text = "Detalhes";
+			// 
+			// txtAtraso
+			// 
+			this.txtAtraso.BackColor = System.Drawing.SystemColors.InactiveCaption;
+			this.txtAtraso.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.txtAtraso.Enabled = false;
+			this.txtAtraso.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtAtraso.Location = new System.Drawing.Point(6, 58);
+			this.txtAtraso.Name = "txtAtraso";
+			this.txtAtraso.Size = new System.Drawing.Size(157, 19);
+			this.txtAtraso.TabIndex = 8;
+			this.txtAtraso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// label22
+			// 
+			this.label22.AutoSize = true;
+			this.label22.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label22.ForeColor = System.Drawing.SystemColors.HotTrack;
+			this.label22.Location = new System.Drawing.Point(6, 31);
+			this.label22.Name = "label22";
+			this.label22.Size = new System.Drawing.Size(125, 23);
+			this.label22.TabIndex = 6;
+			this.label22.Text = "Total de Atraso";
+			// 
+			// groupBox2
+			// 
+			this.groupBox2.Controls.Add(this.btnFiltro);
+			this.groupBox2.Controls.Add(this.cbSiatuacao);
+			this.groupBox2.Controls.Add(this.label21);
+			this.groupBox2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.groupBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
+			this.groupBox2.Location = new System.Drawing.Point(8, 6);
+			this.groupBox2.Name = "groupBox2";
+			this.groupBox2.Size = new System.Drawing.Size(335, 90);
+			this.groupBox2.TabIndex = 0;
+			this.groupBox2.TabStop = false;
+			this.groupBox2.Text = "Filtro";
+			// 
+			// cbSiatuacao
+			// 
+			this.cbSiatuacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbSiatuacao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cbSiatuacao.FormattingEnabled = true;
+			this.cbSiatuacao.Items.AddRange(new object[] {
+            "TODOS",
+            "NÃO PAGAS",
+            "PAGAS"});
+			this.cbSiatuacao.Location = new System.Drawing.Point(101, 41);
+			this.cbSiatuacao.Name = "cbSiatuacao";
+			this.cbSiatuacao.Size = new System.Drawing.Size(152, 27);
+			this.cbSiatuacao.TabIndex = 7;
+			// 
+			// label21
+			// 
+			this.label21.AutoSize = true;
+			this.label21.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label21.ForeColor = System.Drawing.SystemColors.HotTrack;
+			this.label21.Location = new System.Drawing.Point(6, 41);
+			this.label21.Name = "label21";
+			this.label21.Size = new System.Drawing.Size(89, 23);
+			this.label21.TabIndex = 6;
+			this.label21.Text = "Situação";
+			// 
 			// dataGridViewImageColumn1
 			// 
 			this.dataGridViewImageColumn1.HeaderText = "";
 			this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
 			this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+			this.dataGridViewImageColumn1.ReadOnly = true;
 			this.dataGridViewImageColumn1.Width = 50;
 			// 
-			// NOME_MODALIDADE2
+			// btnFiltro
 			// 
-			this.NOME_MODALIDADE2.DataPropertyName = "NOME_MODALIDADE";
-			this.NOME_MODALIDADE2.HeaderText = "Modalidade";
-			this.NOME_MODALIDADE2.Name = "NOME_MODALIDADE2";
-			this.NOME_MODALIDADE2.ReadOnly = true;
-			this.NOME_MODALIDADE2.Width = 172;
-			// 
-			// NUMERO_TURMA2
-			// 
-			this.NUMERO_TURMA2.DataPropertyName = "NUMERO_TURMA";
-			this.NUMERO_TURMA2.HeaderText = "Turma";
-			this.NUMERO_TURMA2.Name = "NUMERO_TURMA2";
-			this.NUMERO_TURMA2.ReadOnly = true;
-			this.NUMERO_TURMA2.Width = 60;
-			// 
-			// VENCIMENTO2
-			// 
-			this.VENCIMENTO2.DataPropertyName = "VENCIMENTO";
-			this.VENCIMENTO2.HeaderText = "Vencimento";
-			this.VENCIMENTO2.Name = "VENCIMENTO2";
-			this.VENCIMENTO2.ReadOnly = true;
-			this.VENCIMENTO2.Width = 90;
-			// 
-			// MENSALIDADE2
-			// 
-			this.MENSALIDADE2.DataPropertyName = "MENSALIDADE";
-			this.MENSALIDADE2.HeaderText = "Mensalidade";
-			this.MENSALIDADE2.Name = "MENSALIDADE2";
-			this.MENSALIDADE2.ReadOnly = true;
-			this.MENSALIDADE2.Width = 90;
-			// 
-			// SITUACAO2
-			// 
-			this.SITUACAO2.DataPropertyName = "SITUACAO";
-			this.SITUACAO2.HeaderText = "Situação";
-			this.SITUACAO2.Name = "SITUACAO2";
-			this.SITUACAO2.ReadOnly = true;
-			this.SITUACAO2.Width = 80;
-			// 
-			// ID_TURMA2
-			// 
-			this.ID_TURMA2.DataPropertyName = "ID_TURMA";
-			this.ID_TURMA2.HeaderText = "ID_TURMA";
-			this.ID_TURMA2.Name = "ID_TURMA2";
-			this.ID_TURMA2.ReadOnly = true;
-			this.ID_TURMA2.Visible = false;
-			// 
-			// ID_MATRICULA2
-			// 
-			this.ID_MATRICULA2.DataPropertyName = "ID_MATRICULA";
-			this.ID_MATRICULA2.HeaderText = "ID_MATRICULA";
-			this.ID_MATRICULA2.Name = "ID_MATRICULA2";
-			this.ID_MATRICULA2.ReadOnly = true;
-			this.ID_MATRICULA2.Visible = false;
-			// 
-			// ID_MODALIDADE2
-			// 
-			this.ID_MODALIDADE2.DataPropertyName = "ID_MODALIDADE";
-			this.ID_MODALIDADE2.HeaderText = "ID_MODALIDADE";
-			this.ID_MODALIDADE2.Name = "ID_MODALIDADE2";
-			this.ID_MODALIDADE2.ReadOnly = true;
-			this.ID_MODALIDADE2.Visible = false;
-			// 
-			// ID_ALUNO2
-			// 
-			this.ID_ALUNO2.DataPropertyName = "ID_ALUNO";
-			this.ID_ALUNO2.HeaderText = "ID_ALUNO";
-			this.ID_ALUNO2.Name = "ID_ALUNO2";
-			this.ID_ALUNO2.ReadOnly = true;
-			this.ID_ALUNO2.Visible = false;
-			// 
-			// NOME_Aluno
-			// 
-			this.NOME_Aluno.DataPropertyName = "NOME_Aluno";
-			this.NOME_Aluno.HeaderText = "NOME_Aluno";
-			this.NOME_Aluno.Name = "NOME_Aluno";
-			this.NOME_Aluno.ReadOnly = true;
-			this.NOME_Aluno.Visible = false;
-			// 
-			// ALUNO_MATRICULADO1
-			// 
-			this.ALUNO_MATRICULADO1.DataPropertyName = "ALUNO_MATRICULADO";
-			this.ALUNO_MATRICULADO1.HeaderText = "ALUNO_MATRICULADO";
-			this.ALUNO_MATRICULADO1.Name = "ALUNO_MATRICULADO1";
-			this.ALUNO_MATRICULADO1.ReadOnly = true;
-			this.ALUNO_MATRICULADO1.Visible = false;
-			// 
-			// txtAlunoMatriculado
-			// 
-			this.txtAlunoMatriculado.Location = new System.Drawing.Point(537, 427);
-			this.txtAlunoMatriculado.Name = "txtAlunoMatriculado";
-			this.txtAlunoMatriculado.Size = new System.Drawing.Size(10, 22);
-			this.txtAlunoMatriculado.TabIndex = 22;
-			this.txtAlunoMatriculado.Visible = false;
-			// 
-			// NOME_MODALIDE
-			// 
-			this.NOME_MODALIDE.DataPropertyName = "NOME_MODALIDADE";
-			this.NOME_MODALIDE.HeaderText = "Modalidade";
-			this.NOME_MODALIDE.Name = "NOME_MODALIDE";
-			this.NOME_MODALIDE.ReadOnly = true;
-			this.NOME_MODALIDE.Width = 185;
-			// 
-			// NUMERO_TURMA
-			// 
-			this.NUMERO_TURMA.DataPropertyName = "NUMERO_TURMA";
-			this.NUMERO_TURMA.HeaderText = "Turma";
-			this.NUMERO_TURMA.Name = "NUMERO_TURMA";
-			this.NUMERO_TURMA.ReadOnly = true;
-			this.NUMERO_TURMA.Width = 70;
-			// 
-			// VENCIMENTO
-			// 
-			this.VENCIMENTO.DataPropertyName = "VENCIMENTO";
-			dataGridViewCellStyle5.NullValue = null;
-			this.VENCIMENTO.DefaultCellStyle = dataGridViewCellStyle5;
-			this.VENCIMENTO.HeaderText = "Vencimento";
-			this.VENCIMENTO.Name = "VENCIMENTO";
-			this.VENCIMENTO.ReadOnly = true;
-			// 
-			// MENSALIDADE
-			// 
-			this.MENSALIDADE.DataPropertyName = "MENSALIDADE";
-			dataGridViewCellStyle6.Format = "C2";
-			dataGridViewCellStyle6.NullValue = null;
-			this.MENSALIDADE.DefaultCellStyle = dataGridViewCellStyle6;
-			this.MENSALIDADE.HeaderText = "Mensalidade";
-			this.MENSALIDADE.Name = "MENSALIDADE";
-			this.MENSALIDADE.ReadOnly = true;
-			// 
-			// SITUACAO1
-			// 
-			this.SITUACAO1.DataPropertyName = "SITUACAO";
-			this.SITUACAO1.HeaderText = "Situação";
-			this.SITUACAO1.Name = "SITUACAO1";
-			this.SITUACAO1.ReadOnly = true;
-			this.SITUACAO1.Visible = false;
-			// 
-			// ID_ALUNO
-			// 
-			this.ID_ALUNO.DataPropertyName = "ID_ALUNO";
-			this.ID_ALUNO.HeaderText = "codigo aluno";
-			this.ID_ALUNO.Name = "ID_ALUNO";
-			this.ID_ALUNO.ReadOnly = true;
-			this.ID_ALUNO.Visible = false;
-			// 
-			// NOME_Aluno2
-			// 
-			this.NOME_Aluno2.DataPropertyName = "NOME_Aluno";
-			this.NOME_Aluno2.HeaderText = "NOME_Aluno";
-			this.NOME_Aluno2.Name = "NOME_Aluno2";
-			this.NOME_Aluno2.ReadOnly = true;
-			this.NOME_Aluno2.Visible = false;
-			// 
-			// ID_MATRICULA
-			// 
-			this.ID_MATRICULA.DataPropertyName = "ID_MATRICULA";
-			this.ID_MATRICULA.HeaderText = "CODIGO MATRICULA";
-			this.ID_MATRICULA.Name = "ID_MATRICULA";
-			this.ID_MATRICULA.ReadOnly = true;
-			this.ID_MATRICULA.Visible = false;
-			// 
-			// ID_TURMA
-			// 
-			this.ID_TURMA.DataPropertyName = "ID_TURMA";
-			this.ID_TURMA.HeaderText = "CODIGO TURMA";
-			this.ID_TURMA.Name = "ID_TURMA";
-			this.ID_TURMA.ReadOnly = true;
-			this.ID_TURMA.Visible = false;
-			// 
-			// ID_MODALIDADE
-			// 
-			this.ID_MODALIDADE.DataPropertyName = "ID_MODALIDADE";
-			this.ID_MODALIDADE.HeaderText = "CODIGO MODALIDADE";
-			this.ID_MODALIDADE.Name = "ID_MODALIDADE";
-			this.ID_MODALIDADE.ReadOnly = true;
-			this.ID_MODALIDADE.Visible = false;
-			// 
-			// ALUNO_MATRICULADO2
-			// 
-			this.ALUNO_MATRICULADO2.DataPropertyName = "ALUNO_MATRICULADO";
-			this.ALUNO_MATRICULADO2.HeaderText = "ALUNO_MATRICULADO";
-			this.ALUNO_MATRICULADO2.Name = "ALUNO_MATRICULADO2";
-			this.ALUNO_MATRICULADO2.ReadOnly = true;
-			this.ALUNO_MATRICULADO2.Visible = false;
-			// 
-			// btnEditar
-			// 
-			this.btnEditar.HeaderText = "";
-			this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
-			this.btnEditar.Name = "btnEditar";
-			this.btnEditar.ReadOnly = true;
-			this.btnEditar.Width = 50;
-			// 
-			// ALUNO_MATRICULADO
-			// 
-			this.ALUNO_MATRICULADO.DataPropertyName = "ALUNO_MATRICULADO";
-			this.ALUNO_MATRICULADO.HeaderText = "ALUNO_MATRICULADO";
-			this.ALUNO_MATRICULADO.Name = "ALUNO_MATRICULADO";
-			this.ALUNO_MATRICULADO.ReadOnly = true;
-			this.ALUNO_MATRICULADO.Visible = false;
-			// 
-			// NOME_MODALIDADE
-			// 
-			this.NOME_MODALIDADE.DataPropertyName = "NOME_MODALIDADE";
-			this.NOME_MODALIDADE.HeaderText = "Modalidade";
-			this.NOME_MODALIDADE.Name = "NOME_MODALIDADE";
-			this.NOME_MODALIDADE.ReadOnly = true;
-			this.NOME_MODALIDADE.Width = 210;
-			// 
-			// VagasSobrando
-			// 
-			this.VagasSobrando.DataPropertyName = "VagasSobrando";
-			this.VagasSobrando.HeaderText = "Vagas";
-			this.VagasSobrando.Name = "VagasSobrando";
-			this.VagasSobrando.ReadOnly = true;
-			this.VagasSobrando.Width = 70;
-			// 
-			// numeroTurmaCadastro
-			// 
-			this.numeroTurmaCadastro.DataPropertyName = "NUMERO_TURMA";
-			this.numeroTurmaCadastro.HeaderText = "Turma";
-			this.numeroTurmaCadastro.Name = "numeroTurmaCadastro";
-			this.numeroTurmaCadastro.ReadOnly = true;
-			this.numeroTurmaCadastro.Width = 80;
-			// 
-			// maximoAlunosCadastro
-			// 
-			this.maximoAlunosCadastro.DataPropertyName = "MAXIMO_ALUNOS";
-			this.maximoAlunosCadastro.HeaderText = "Maximo Vagas";
-			this.maximoAlunosCadastro.Name = "maximoAlunosCadastro";
-			this.maximoAlunosCadastro.ReadOnly = true;
-			this.maximoAlunosCadastro.Visible = false;
-			this.maximoAlunosCadastro.Width = 70;
-			// 
-			// MENSALIDADE3
-			// 
-			this.MENSALIDADE3.DataPropertyName = "MENSALIDADE";
-			this.MENSALIDADE3.HeaderText = "Mensalidade";
-			this.MENSALIDADE3.Name = "MENSALIDADE3";
-			this.MENSALIDADE3.ReadOnly = true;
-			this.MENSALIDADE3.Visible = false;
-			// 
-			// ID_MODALIDADE_CADASTRO
-			// 
-			this.ID_MODALIDADE_CADASTRO.DataPropertyName = "ID_MODALIDADE";
-			this.ID_MODALIDADE_CADASTRO.HeaderText = "ID_MODALIDADE";
-			this.ID_MODALIDADE_CADASTRO.Name = "ID_MODALIDADE_CADASTRO";
-			this.ID_MODALIDADE_CADASTRO.ReadOnly = true;
-			this.ID_MODALIDADE_CADASTRO.Visible = false;
-			// 
-			// ID_TURMA_CADASTRO
-			// 
-			this.ID_TURMA_CADASTRO.DataPropertyName = "ID_TURMA";
-			this.ID_TURMA_CADASTRO.HeaderText = "id turma";
-			this.ID_TURMA_CADASTRO.Name = "ID_TURMA_CADASTRO";
-			this.ID_TURMA_CADASTRO.ReadOnly = true;
-			this.ID_TURMA_CADASTRO.Visible = false;
+			this.btnFiltro.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFiltro.Image = global::frmAcademia.Properties.Resources.if_filter_299094;
+			this.btnFiltro.Location = new System.Drawing.Point(259, 37);
+			this.btnFiltro.Name = "btnFiltro";
+			this.btnFiltro.Size = new System.Drawing.Size(51, 34);
+			this.btnFiltro.TabIndex = 8;
+			this.btnFiltro.UseVisualStyleBackColor = true;
+			this.btnFiltro.Click += new System.EventHandler(this.btnFiltro_Click);
 			// 
 			// txtAtiva
 			// 
@@ -1088,10 +1362,18 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.tpMatricula.ResumeLayout(false);
 			this.tpMatricula.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvMatriculas)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvTurmasCadastro)).EndInit();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			this.tabPage2.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.dgvMensalidade)).EndInit();
+			this.groupBox4.ResumeLayout(false);
+			this.groupBox3.ResumeLayout(false);
+			this.groupBox3.PerformLayout();
+			this.groupBox2.ResumeLayout(false);
+			this.groupBox2.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -1154,17 +1436,6 @@
 		private System.Windows.Forms.TextBox txtIdTurma;
 		private System.Windows.Forms.TextBox txtIdMatricula;
 		private System.Windows.Forms.TextBox txtAlunoMatriculado;
-		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_MODALIDADE2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn NUMERO_TURMA2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn VENCIMENTO2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn MENSALIDADE2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn SITUACAO2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ID_TURMA2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MATRICULA2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MODALIDADE2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ID_ALUNO2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_Aluno;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ALUNO_MATRICULADO1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_MODALIDE;
 		private System.Windows.Forms.DataGridViewTextBoxColumn NUMERO_TURMA;
 		private System.Windows.Forms.DataGridViewTextBoxColumn VENCIMENTO;
@@ -1176,7 +1447,11 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_TURMA;
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MODALIDADE;
 		private System.Windows.Forms.DataGridViewTextBoxColumn ALUNO_MATRICULADO2;
-		private System.Windows.Forms.DataGridViewImageColumn btnEditar;
+		private System.Windows.Forms.PictureBox pictureBox3;
+		private System.Windows.Forms.TabPage tabPage2;
+		private System.Windows.Forms.GroupBox groupBox2;
+		private System.Windows.Forms.Label label21;
+		private System.Windows.Forms.DataGridViewImageColumn btnHorario;
 		private System.Windows.Forms.DataGridViewTextBoxColumn ALUNO_MATRICULADO;
 		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_MODALIDADE;
 		private System.Windows.Forms.DataGridViewTextBoxColumn VagasSobrando;
@@ -1185,5 +1460,33 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn MENSALIDADE3;
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MODALIDADE_CADASTRO;
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_TURMA_CADASTRO;
+		private System.Windows.Forms.GroupBox groupBox4;
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.GroupBox groupBox3;
+		private System.Windows.Forms.Label label22;
+		private System.Windows.Forms.TextBox txtAtraso;
+		private System.Windows.Forms.ComboBox cbSiatuacao;
+		private System.Windows.Forms.DataGridView dgvMensalidade;
+		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_MODALIDADE2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn NUMERO_TURMA2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn VENCIMENTO2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn MENSALIDADE2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn SITUACAO2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID_TURMA2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MATRICULA2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MODALIDADE2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID_ALUNO2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_Aluno;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ALUNO_MATRICULADO1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn NOME_MODALIDADE10;
+		private System.Windows.Forms.DataGridViewTextBoxColumn DATA_VENCIMENTO;
+		private System.Windows.Forms.DataGridViewTextBoxColumn DATA_PAGAMENTO;
+		private System.Windows.Forms.DataGridViewTextBoxColumn MENSALIDADE10;
+		private System.Windows.Forms.DataGridViewTextBoxColumn SITUACAO;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MODALIDADE10;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MENSALIDADE;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MATRICULA10;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ID_Aluno3;
+		private System.Windows.Forms.Button btnFiltro;
 	}
 }

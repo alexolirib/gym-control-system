@@ -22,7 +22,7 @@ namespace frmAcademia
 			
 			this.formulario = formulario;
 		}
-		
+		Mensalidade novaMensalidade;
 		alunos novoAluno;
 		Turma novoTurma;
 		matricula novaMatricula;
@@ -76,12 +76,14 @@ namespace frmAcademia
 		}
 
 		private void frmControleAluno_Load(object sender, EventArgs e)
-		{
+		{			
 			listarTurmas();
 			//atualizaVagas();
 			listarMatricula();
 			cbxVencimento.SelectedIndex = -1;
 			bloqueaCadastro();
+			listarMensalidade();
+			cbSiatuacao.SelectedIndex = 0;
 			
 		}
 		public void ExibirAluno(DataGridView aluno)
@@ -166,7 +168,12 @@ namespace frmAcademia
 		}
 		private void dgvTurmas_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
-			bloqueaCadastro();
+			if (dgvTurmasCadastro.Columns[e.ColumnIndex].Name == "btnHorario")
+			{
+				frmHorarios frmHorario = new frmHorarios(Convert.ToInt32(dgvTurmasCadastro.Rows[dgvTurmasCadastro.CurrentRow.Index].Cells["ID_TURMA_CADASTRO"].Value.ToString()), dgvTurmasCadastro.Rows[dgvTurmasCadastro.CurrentRow.Index].Cells["NOME_MODALIDADE"].Value.ToString(),dgvTurmasCadastro.Rows[dgvTurmasCadastro.CurrentRow.Index].Cells["numeroTurmaCadastro"].Value.ToString());
+				frmHorario.ShowDialog();
+			}
+			bloqueaCadastro();			 
 		}
 
 		private void dgvTurmasCadastro_DoubleClick(object sender, EventArgs e)
@@ -199,7 +206,32 @@ namespace frmAcademia
 							DataGridView modalidadeSelecionada = dgvTurmasCadastro.Rows[dgvTurmasCadastro.CurrentRow.Index].DataGridView;
 							novaFrmMatricula.ExibirMatricula(modalidadeSelecionada);
 							novaFrmMatricula.ShowDialog();
-							listarTurmas(); 
+							listarTurmas();
+							//Para fazer a gravação da Mensalidade, sempre gerá
+							if (teste == 1)
+							{								
+								int dia = Convert.ToInt32(dgvMatriculas.Rows[0].Cells["VENCIMENTO2"].Value);
+								int mes = Convert.ToInt32(DateTime.Today.Month);
+								int ano = Convert.ToInt32(DateTime.Today.Year);
+								if (Convert.ToDateTime(dia + "/" + mes + "/" + ano) < DateTime.Today.Date)
+								{
+									if (mes == 12)
+									{
+										mes = 1;
+										ano++;
+									}
+									else
+									{
+										mes++;
+									}
+								}
+								DateTime data = Convert.ToDateTime(dia + "/" + mes + "/" + ano);
+								novaMensalidade = new Mensalidade();
+								novaMensalidade.Salvar(Convert.ToInt32(dgvMatriculas.Rows[0].Cells["ID_MATRICULA2"].Value), data, "Em Aberto");
+								MessageBox.Show("Foi Gerado uma mensalidade para essa matrícula!!", "Mensalidade");
+								listarMensalidade();
+							}
+							teste = 0;
 						}
 					}
 				}
@@ -208,6 +240,84 @@ namespace frmAcademia
 					MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				} 
 			}
+		}
+		public void detalhesMensalidade()
+		{
+			//Verifica a situação do aluno! 
+			Decimal total = 0;
+
+			for (int i = 0; i < dgvMensalidade.Rows.Count; i++)
+			{
+				if (dgvMensalidade.Rows[i].Cells["SITUACAO"].Value.ToString() == "Em Aberto")
+				{
+					if (Convert.ToDateTime(dgvMensalidade.Rows[i].Cells["DATA_VENCIMENTO"].Value) < DateTime.Today.Date)
+					{						
+						dgvMensalidade.Rows[i].Cells["SITUACAO"].Value = "Atrasado";
+						
+						total += Convert.ToDecimal(dgvMensalidade.Rows[i].Cells["MENSALIDADE10"].Value); 
+					}
+					else
+					{
+						dgvMensalidade.Rows[i].Cells["SITUACAO"].Value = "Em Aberto";
+					}
+				}
+				else
+				{
+					dgvMensalidade.Rows[i].Cells["SITUACAO"].Value = "Pago";
+				}
+			}
+			if (total > 0)
+			{
+				txtAtraso.Text = "R$ " + total;
+			}
+			else
+			{ 
+				txtAtraso.Text = "--------------";
+			}
+		}
+		private void listarMensalidadePagas()
+		{
+			try
+			{
+				novaMensalidade = new Mensalidade();
+				dgvMensalidade.DataSource = novaMensalidade.ListarPelasContasPagas(Convert.ToInt32(txtCodAluno.Text));
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
+		private void listarMensalidadeNaoPagas()
+		{
+			try
+			{
+				novaMensalidade = new Mensalidade();
+				dgvMensalidade.DataSource = novaMensalidade.ListarPelasContasNaoPagas(Convert.ToInt32(txtCodAluno.Text));
+				detalhesMensalidade();
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
+		private void listarMensalidade()
+		{
+			try
+			{
+				novaMensalidade = new Mensalidade();
+				dgvMensalidade.DataSource = novaMensalidade.Listar(Convert.ToInt32(txtCodAluno.Text));
+				detalhesMensalidade();
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
+		//Variavel para ajudar a saber se tem que criar ou não uma mensalidade 
+		int teste = 0;
+		public void verificaMensalidade()
+		{
+			teste = 1;
 		}
 		private void dgvMatriculas_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{//Isso é para o método de alterar e apagar
@@ -309,6 +419,8 @@ namespace frmAcademia
 		{
 			try
 			{
+				novaMensalidade = new Mensalidade();
+				novaMensalidade.DeletePelaMatricula(Convert.ToInt32(txtIdMatricula.Text));
 				novaMatricula = new matricula();
 				novaMatricula.delete(Convert.ToInt32(txtIdMatricula.Text));
 				MessageBox.Show("Excluido!!");
@@ -318,6 +430,7 @@ namespace frmAcademia
 				listarMatricula();
 				bloqueaCadastro();
 				listarTurmas();
+				listarMensalidade();
 			}
 			catch (Exception ex)
 			{
@@ -355,6 +468,33 @@ namespace frmAcademia
 		private void dgvTurmasCadastro_CellEndEdit(object sender, DataGridViewCellEventArgs e)
 		{
 									
-		}		
+		}
+
+		private void dgvTurma_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+
+		private void btnFiltro_Click(object sender, EventArgs e)
+		{
+			if (cbSiatuacao.Text == "TODOS")
+			{
+				listarMensalidade();
+			}
+			else
+			{
+				if (cbSiatuacao.Text == "NÃO PAGAS")
+				{
+					listarMensalidadeNaoPagas();
+				}
+				else
+				{
+					if (cbSiatuacao.Text == "PAGAS")
+					{
+						listarMensalidadePagas();
+					}
+				}
+			}
+		}
 	}
 }
