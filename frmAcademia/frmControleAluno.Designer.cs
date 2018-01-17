@@ -28,10 +28,10 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(txtAtiva));
 			this.label1 = new System.Windows.Forms.Label();
 			this.tcAluno = new System.Windows.Forms.TabControl();
@@ -132,15 +132,15 @@
 			this.ID_MATRICULA10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ID_Aluno3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
-			this.button1 = new System.Windows.Forms.Button();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.txtAtraso = new System.Windows.Forms.TextBox();
 			this.label22 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.btnFiltro = new System.Windows.Forms.Button();
 			this.cbSiatuacao = new System.Windows.Forms.ComboBox();
 			this.label21 = new System.Windows.Forms.Label();
 			this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-			this.btnFiltro = new System.Windows.Forms.Button();
+			this.btnPagar = new System.Windows.Forms.Button();
 			this.tcAluno.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -297,8 +297,8 @@
 			// VENCIMENTO
 			// 
 			this.VENCIMENTO.DataPropertyName = "VENCIMENTO";
-			dataGridViewCellStyle1.NullValue = null;
-			this.VENCIMENTO.DefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle15.NullValue = null;
+			this.VENCIMENTO.DefaultCellStyle = dataGridViewCellStyle15;
 			this.VENCIMENTO.HeaderText = "Vencimento";
 			this.VENCIMENTO.Name = "VENCIMENTO";
 			this.VENCIMENTO.ReadOnly = true;
@@ -306,9 +306,9 @@
 			// MENSALIDADE
 			// 
 			this.MENSALIDADE.DataPropertyName = "MENSALIDADE";
-			dataGridViewCellStyle2.Format = "C2";
-			dataGridViewCellStyle2.NullValue = null;
-			this.MENSALIDADE.DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle16.Format = "C2";
+			dataGridViewCellStyle16.NullValue = null;
+			this.MENSALIDADE.DefaultCellStyle = dataGridViewCellStyle16;
 			this.MENSALIDADE.HeaderText = "Mensalidade";
 			this.MENSALIDADE.Name = "MENSALIDADE";
 			this.MENSALIDADE.ReadOnly = true;
@@ -1139,6 +1139,7 @@
 			this.dgvMensalidade.ShowRowErrors = false;
 			this.dgvMensalidade.Size = new System.Drawing.Size(707, 352);
 			this.dgvMensalidade.TabIndex = 8;
+			this.dgvMensalidade.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMensalidade_CellContentClick);
 			// 
 			// NOME_MODALIDADE10
 			// 
@@ -1151,9 +1152,9 @@
 			// DATA_VENCIMENTO
 			// 
 			this.DATA_VENCIMENTO.DataPropertyName = "DATA_VENCIMENTO";
-			dataGridViewCellStyle3.Format = "d";
-			dataGridViewCellStyle3.NullValue = null;
-			this.DATA_VENCIMENTO.DefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle13.Format = "d";
+			dataGridViewCellStyle13.NullValue = null;
+			this.DATA_VENCIMENTO.DefaultCellStyle = dataGridViewCellStyle13;
 			this.DATA_VENCIMENTO.HeaderText = "Vencimento";
 			this.DATA_VENCIMENTO.Name = "DATA_VENCIMENTO";
 			this.DATA_VENCIMENTO.ReadOnly = true;
@@ -1170,9 +1171,9 @@
 			// MENSALIDADE10
 			// 
 			this.MENSALIDADE10.DataPropertyName = "MENSALIDADE";
-			dataGridViewCellStyle4.Format = "C2";
-			dataGridViewCellStyle4.NullValue = null;
-			this.MENSALIDADE10.DefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle14.Format = "C2";
+			dataGridViewCellStyle14.NullValue = null;
+			this.MENSALIDADE10.DefaultCellStyle = dataGridViewCellStyle14;
 			this.MENSALIDADE10.HeaderText = "Valor";
 			this.MENSALIDADE10.Name = "MENSALIDADE10";
 			this.MENSALIDADE10.ReadOnly = true;
@@ -1219,7 +1220,7 @@
 			// 
 			// groupBox4
 			// 
-			this.groupBox4.Controls.Add(this.button1);
+			this.groupBox4.Controls.Add(this.btnPagar);
 			this.groupBox4.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox4.ForeColor = System.Drawing.SystemColors.HotTrack;
 			this.groupBox4.Location = new System.Drawing.Point(524, 6);
@@ -1228,19 +1229,6 @@
 			this.groupBox4.TabIndex = 7;
 			this.groupBox4.TabStop = false;
 			this.groupBox4.Text = "Controle";
-			// 
-			// button1
-			// 
-			this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Image = global::frmAcademia.Properties.Resources.if_money_36203;
-			this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.button1.Location = new System.Drawing.Point(24, 34);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(117, 47);
-			this.button1.TabIndex = 0;
-			this.button1.Text = "Pagamento";
-			this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.button1.UseVisualStyleBackColor = true;
 			// 
 			// groupBox3
 			// 
@@ -1266,6 +1254,7 @@
 			this.txtAtraso.Size = new System.Drawing.Size(157, 19);
 			this.txtAtraso.TabIndex = 8;
 			this.txtAtraso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtAtraso.TextChanged += new System.EventHandler(this.txtAtraso_TextChanged);
 			// 
 			// label22
 			// 
@@ -1291,6 +1280,17 @@
 			this.groupBox2.TabIndex = 0;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Filtro";
+			// 
+			// btnFiltro
+			// 
+			this.btnFiltro.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFiltro.Image = global::frmAcademia.Properties.Resources.if_filter_299094;
+			this.btnFiltro.Location = new System.Drawing.Point(259, 37);
+			this.btnFiltro.Name = "btnFiltro";
+			this.btnFiltro.Size = new System.Drawing.Size(51, 34);
+			this.btnFiltro.TabIndex = 8;
+			this.btnFiltro.UseVisualStyleBackColor = true;
+			this.btnFiltro.Click += new System.EventHandler(this.btnFiltro_Click);
 			// 
 			// cbSiatuacao
 			// 
@@ -1325,16 +1325,18 @@
 			this.dataGridViewImageColumn1.ReadOnly = true;
 			this.dataGridViewImageColumn1.Width = 50;
 			// 
-			// btnFiltro
+			// btnPagar
 			// 
-			this.btnFiltro.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnFiltro.Image = global::frmAcademia.Properties.Resources.if_filter_299094;
-			this.btnFiltro.Location = new System.Drawing.Point(259, 37);
-			this.btnFiltro.Name = "btnFiltro";
-			this.btnFiltro.Size = new System.Drawing.Size(51, 34);
-			this.btnFiltro.TabIndex = 8;
-			this.btnFiltro.UseVisualStyleBackColor = true;
-			this.btnFiltro.Click += new System.EventHandler(this.btnFiltro_Click);
+			this.btnPagar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnPagar.Image = global::frmAcademia.Properties.Resources.if_money_36203;
+			this.btnPagar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnPagar.Location = new System.Drawing.Point(36, 34);
+			this.btnPagar.Name = "btnPagar";
+			this.btnPagar.Size = new System.Drawing.Size(117, 47);
+			this.btnPagar.TabIndex = 1;
+			this.btnPagar.Text = "Pagamento";
+			this.btnPagar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnPagar.UseVisualStyleBackColor = true;
 			// 
 			// txtAtiva
 			// 
@@ -1461,7 +1463,6 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MODALIDADE_CADASTRO;
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_TURMA_CADASTRO;
 		private System.Windows.Forms.GroupBox groupBox4;
-		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.GroupBox groupBox3;
 		private System.Windows.Forms.Label label22;
 		private System.Windows.Forms.TextBox txtAtraso;
@@ -1488,5 +1489,6 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_MATRICULA10;
 		private System.Windows.Forms.DataGridViewTextBoxColumn ID_Aluno3;
 		private System.Windows.Forms.Button btnFiltro;
+		private System.Windows.Forms.Button btnPagar;
 	}
 }

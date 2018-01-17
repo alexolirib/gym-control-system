@@ -83,6 +83,26 @@ namespace frmAcademia.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_Cashier_2_379354 {
+            get {
+                object obj = ResourceManager.GetObject("if_Cashier-2_379354", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_Cashier_2_3793541 {
+            get {
+                object obj = ResourceManager.GetObject("if_Cashier-2_3793541", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_clients_43573 {
             get {
                 object obj = ResourceManager.GetObject("if_clients_43573", resourceCulture);

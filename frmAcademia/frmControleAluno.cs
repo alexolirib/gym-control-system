@@ -496,5 +496,17 @@ namespace frmAcademia
 				}
 			}
 		}
+
+		private void txtAtraso_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void dgvMensalidade_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+
+		
 	}
 }

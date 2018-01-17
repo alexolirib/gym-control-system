@@ -63,3 +63,19 @@ create table MENSALIDADE(
 	DATA_PAGAMENTO datetime,
 	SITUACAO varchar(12) not null,
 )
+
+create table Caixa(
+	ID_Caixa int primary key identity,
+	Data DateTime not null,
+	hora Datetime not null,
+	Saldo_Inicial decimal(8,2) not null,
+	Situacao varchar(30) not null
+)
+
+create table Detalhes_Caixa(
+	ID_Detalhes int primary key identity,
+	ID_Caixa int foreign key references Caixa not null,
+	Valor decimal(8,2) not null,
+	Movimento varchar(30) not null,
+	Tipo_Pagamento varchar(30) not null,
+)
